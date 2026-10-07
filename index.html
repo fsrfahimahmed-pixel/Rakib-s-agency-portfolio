@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NEXORA GROWTH — Creative Systems Built To Make Attention Convert</title>
+<meta name="description" content="Nexora Growth is a premium digital marketing agency. Creative systems built to make attention convert."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#09090B',
+        graphite: '#121214',
+        graphite2: '#18181B',
+        graphite3: '#1F1F23',
+        lime: '#D4FF3F',
+        limedim: '#B8E62E',
+        violetx: '#7C5CFF',
+        cyanx: '#4DE8FF',
+        bone: '#F4F4EF',
+        muted: '#9CA3AF',
+        hair: 'rgba(255,255,255,0.08)'
+      },
+      fontFamily: {
+        display: ['Archivo','sans-serif'],
+        grotesk: ['Space Grotesk','sans-serif'],
+        body: ['Inter','sans-serif']
+      }
+    }
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+  *{-webkit-tap-highlight-color:transparent}
+  html{background:#09090B}
+  body{background:#09090B;color:#F4F4EF;font-family:Inter,sans-serif;overflow-x:hidden}
+  ::selection{background:#D4FF3F;color:#09090B}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:#09090B}
+  ::-webkit-scrollbar-thumb{background:#2a2a2e;border-radius:99px;border:2px solid #09090B}
+  ::-webkit-scrollbar-thumb:hover{background:#D4FF3F}
+  .font-display{font-family:Archivo,sans-serif}
+  .grain::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:120;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .hairline{border:1px solid rgba(255,255,255,.08)}
+  .glass{background:rgba(24,24,27,.62);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,.09)}
+  .glass2{background:rgba(18,18,20,.78);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,.1)}
+  .glass-lime{background:rgba(212,255,63,.08);backdrop-filter:blur(20px);border:1px solid rgba(212,255,63,.22)}
+  .micro{font-family:Space Grotesk;font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+  .hero-h{font-family:Archivo;font-weight:900;line-height:.88;letter-spacing:-.04em;text-transform:uppercase;font-size:clamp(3.2rem,9.5vw,9.2rem)}
+  .h-sec{font-family:Archivo;font-weight:900;letter-spacing:-.03em;line-height:.92;text-transform:uppercase;font-size:clamp(2.2rem,5.5vw,4.8rem)}
+  .outline-text{-webkit-text-stroke:1.5px rgba(255,255,255,.28);color:transparent}
+  .lime-text{color:#D4FF3F}
+  .btn-lime{background:#D4FF3F;color:#09090B;font-family:Space Grotesk;font-weight:700;letter-spacing:.06em;transition:.22s cubic-bezier(.34,1.56,.64,1)}
+  .btn-lime:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 12px 40px rgba(212,255,63,.35)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.18);transition:.22s}
+  .btn-ghost:hover{border-color:#D4FF3F;color:#D4FF3F;transform:translateY(-2px)}
+  /* Preloader */
+  #preloader{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;background:#09090B}
+  #preloader .panel-top,#preloader .panel-bottom{position:absolute;left:0;right:0;height:50.5%;background:#0E0E10;transition:transform .8s cubic-bezier(.76,0,.24,1)}
+  #preloader .panel-top{top:0;border-bottom:1px solid rgba(255,255,255,.06)}
+  #preloader .panel-bottom{bottom:0;border-top:1px solid rgba(255,255,255,.06)}
+  #preloader.done .panel-top{transform:translateY(-101%)}
+  #preloader.done .panel-bottom{transform:translateY(101%)}
+  #preloader.done{pointer-events:none}
+  #preloader.done .pre-inner{opacity:0;transform:scale(.92);transition:.4s}
+  .pre-inner{transition:.4s;z-index:2}
+  .loader-bar{width:220px;height:2px;background:rgba(255,255,255,.12);overflow:hidden;border-radius:99px}
+  .loader-bar span{display:block;height:100%;width:0;background:#D4FF3F;animation:load 1.3s ease forwards}
+  @keyframes load{to{width:100%}}
+  /* Reveal */
+  .rv{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .8s cubic-bezier(.22,1,.36,1)}
+  .rv.in{opacity:1;transform:none}
+  .rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}.rv-d4{transition-delay:.32s}
+  .line-mask{overflow:hidden;display:block}
+  .line-mask>span{display:block;transform:translateY(110%);animation:lineUp .9s cubic-bezier(.22,1,.36,1) forwards}
+  @keyframes lineUp{to{transform:none}}
+  /* Cursor */
+  #cDot,#cRing,#cLabel{position:fixed;top:0;left:0;pointer-events:none;z-index:150}
+  #cDot{width:8px;height:8px;background:#D4FF3F;border-radius:99px;transform:translate(-50%,-50%)}
+  #cRing{width:38px;height:38px;border:1.5px solid rgba(212,255,63,.6);border-radius:99px;transform:translate(-50%,-50%);transition:width .2s,height .2s,background .2s,border .2s;display:flex;align-items:center;justify-content:center}
+  #cRing.big{width:92px;height:92px;background:rgba(212,255,63,.95);border-color:#D4FF3F}
+  #cLabel{font-family:Space Grotesk;font-size:11px;font-weight:700;letter-spacing:.08em;color:#09090B;opacity:0;transform:translate(-50%,-50%);transition:opacity .15s;white-space:nowrap}
+  #cRing.big + #cLabel{opacity:1}
+  #cTrail{position:fixed;top:0;left:0;width:14px;height:14px;border-radius:99px;background:rgba(212,255,63,.18);pointer-events:none;z-index:149;transform:translate(-50%,-50%);filter:blur(1px)}
+  @media (pointer:coarse){#cDot,#cRing,#cLabel,#cTrail{display:none!important}}
+  /* Ambient */
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  @keyframes floaty2{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(12px) rotate(1deg)}}
+  @keyframes pulseGlow{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
+  @keyframes marq{to{transform:translateX(-50%)}}
+  @keyframes spinSlow{to{transform:rotate(360deg)}}
+  .float-a{animation:floaty 6s ease-in-out infinite}
+  .float-b{animation:floaty2 7.5s ease-in-out infinite}
+  .marquee-track{display:flex;width:max-content;animation:marq 28s linear infinite}
+  .marquee-track:hover{animation-play-state:paused}
+  .grid-bg{background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:56px 56px}
+  .glow-lime{box-shadow:0 0 60px rgba(212,255,63,.18),0 0 120px rgba(212,255,63,.08)}
+  /* Service universe */
+  .svc-card{transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .3s,border-color .25s,box-shadow .25s,background .25s;transform-style:preserve-3d;will-change:transform}
+  .svc-wrap.dim .svc-card:not(.active){opacity:.32;filter:saturate(.4) blur(.4px)}
+  .svc-card.active{border-color:rgba(212,255,63,.5)!important;box-shadow:0 20px 60px rgba(212,255,63,.14);background:rgba(212,255,63,.06)!important}
+  /* Work */
+  .work-card img{transition:transform .8s cubic-bezier(.22,1,.36,1),filter .5s}
+  .work-card:hover img{transform:scale(1.08)}
+  .work-card .work-cta{transition:.35s;opacity:0;transform:translateY(12px)}
+  .work-card:hover .work-cta{opacity:1;transform:none}
+  .filter-btn{transition:.2s}
+  .filter-btn.active{background:#D4FF3F;color:#09090B;border-color:#D4FF3F;font-weight:700}
+  /* FAQ */
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,1,.36,1),opacity .3s;opacity:0}
+  .faq-item.open .faq-a{opacity:1}
+  .faq-item.open .faq-icon{transform:rotate(45deg);background:#D4FF3F;color:#09090B}
+  .faq-icon{transition:.3s}
+  /* Drawer / modal */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);z-index:90;opacity:0;pointer-events:none;transition:.35s}
+  .overlay.show{opacity:1;pointer-events:auto}
+  #svcDrawer{position:fixed;top:0;right:0;height:100dvh;width:min(480px,100vw);z-index:95;transform:translateX(105%);transition:transform .5s cubic-bezier(.22,1,.36,1)}
+  #svcDrawer.show{transform:none}
+  @media(max-width:640px){#svcDrawer{top:auto;bottom:0;height:92dvh;width:100vw;border-radius:24px 24px 0 0;transform:translateY(105%)}#svcDrawer.show{transform:none}}
+  .modal-card{position:fixed;inset:0;z-index:96;display:flex;align-items:center;justify-content:center;padding:16px;pointer-events:none}
+  .modal-card .inner{pointer-events:auto;transform:translateY(24px) scale(.97);opacity:0;transition:.4s cubic-bezier(.22,1,.36,1);max-height:92dvh;overflow:auto}
+  .modal-card.show .inner{transform:none;opacity:1}
+  .modal-card{opacity:0;transition:.3s}
+  .modal-card.show{opacity:1;pointer-events:auto}
+  /* Chat */
+  #chatPanel{position:fixed;bottom:96px;right:20px;width:min(400px,calc(100vw - 32px));height:min(620px,calc(100dvh - 130px));z-index:98;transform:translateY(20px) scale(.96);opacity:0;pointer-events:none;transition:.4s cubic-bezier(.22,1,.36,1);transform-origin:bottom right}
+  #chatPanel.show{transform:none;opacity:1;pointer-events:auto}
+  @keyframes orbPulse{0%{box-shadow:0 0 0 0 rgba(212,255,63,.5)}70%{box-shadow:0 0 0 18px rgba(212,255,63,0)}100%{box-shadow:0 0 0 0 rgba(212,255,63,0)}}
+  #orbBtn{animation:orbPulse 2.8s infinite}
+  .typing span{width:6px;height:6px;background:#9CA3AF;border-radius:99px;display:inline-block;animation:tp 1s infinite}
+  .typing span:nth-child(2){animation-delay:.15s}.typing span:nth-child(3){animation-delay:.3s}
+  @keyframes tp{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
+  /* Inputs */
+  .fld{position:relative}
+  .fld input,.fld textarea,.fld select{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 16px 14px;color:#F4F4EF;outline:none;transition:.2s;font-size:15px}
+  .fld input:focus,.fld textarea:focus,.fld select:focus{border-color:#D4FF3F;box-shadow:0 0 0 3px rgba(212,255,63,.18);background:rgba(212,255,63,.04)}
+  .fld label{position:absolute;left:16px;top:16px;font-size:14px;color:#9CA3AF;pointer-events:none;transition:.2s}
+  .fld input:focus + label,.fld input:not(:placeholder-shown)+label,.fld textarea:focus+label,.fld textarea:not(:placeholder-shown)+label{top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#D4FF3F}
+  select option{background:#18181B}
+  /* Process */
+  #procBar{transform-origin:left;transform:scaleX(0)}
+  .no-scrollbar::-webkit-scrollbar{display:none}
+  .no-scrollbar{scrollbar-width:none}
+  .step-num{font-family:Archivo;font-weight:900;font-size:clamp(3rem,6vw,5rem);line-height:1;-webkit-text-stroke:1px rgba(255,255,255,.22);color:transparent}
+  .active-step .step-num{-webkit-text-stroke:0;color:#D4FF3F}
+  /* Toast */
+  #toasts{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:130;display:flex;flex-direction:column;gap:10px;align-items:center;width:min(420px,calc(100vw - 32px))}
+  .toast{background:#18181B;border:1px solid rgba(212,255,63,.3);border-radius:14px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 20px 60px rgba(0,0,0,.5);animation:tin .4s cubic-bezier(.34,1.56,.64,1)}
+  @keyframes tin{from{transform:translateY(20px) scale(.95);opacity:0}}
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}.line-mask>span{transform:none}}
+</style>
+</head>
+<body class="grain antialiased">
+
+<!-- PRELOADER -->
+<div id="preloader" role="status" aria-label="Loading">
+  <div class="panel-top"></div><div class="panel-bottom"></div>
+  <div class="pre-inner flex flex-col items-center gap-6 px-6 text-center">
+    <div class="flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl bg-[#D4FF3F] flex items-center justify-center font-display font-black text-black text-xl">N</div>
+      <div class="text-left"><div class="font-display font-900 font-black tracking-tight text-xl leading-none">NEXORA</div><div class="micro text-muted mt-1">Growth Systems</div></div>
+    </div>
+    <div class="micro text-muted">Building growth systems…</div>
+    <div class="loader-bar"><span></span></div>
+    <div class="font-grotesk text-xs text-white/40">Creative • Performance • Scale</div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div id="cTrail"></div><div id="cRing"></div><div id="cLabel">View</div><div id="cDot"></div>
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 left-0 right-0 z-[80] transition-all duration-300">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <div id="navInner" class="mt-3 md:mt-4 glass rounded-2xl px-4 md:px-6 h-[64px] flex items-center justify-between transition-all">
+      <a href="#/" data-nav class="flex items-center gap-3 group" aria-label="Nexora home">
+        <div class="w-9 h-9 rounded-lg bg-[#D4FF3F] flex items-center justify-center font-display font-black text-black text-lg group-hover:rotate-[-8deg] transition">N</div>
+        <div class="leading-none"><div class="font-display font-black tracking-tight text-[18px]">NEXORA</div><div class="micro !text-[9px] text-muted">Growth</div></div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 micro !text-[12px] text-white/70" aria-label="Primary">
+        <a href="#home" class="hover:text-[#D4FF3F] transition">Home</a>
+        <a href="#services" class="hover:text-[#D4FF3F] transition">Services</a>
+        <a href="#work" class="hover:text-[#D4FF3F] transition">Work</a>
+        <a href="#about" class="hover:text-[#D4FF3F] transition">About</a>
+        <a href="#process" class="hover:text-[#D4FF3F] transition">Process</a>
+        <a href="#contact" class="hover:text-[#D4FF3F] transition">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="btn-lime hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13px]">Start a Project <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+        <div class="relative">
+          <button id="dotsBtn" aria-label="More menu" aria-expanded="false" class="w-10 h-10 rounded-full hairline flex items-center justify-center hover:border-[#D4FF3F] hover:text-[#D4FF3F] transition"><i data-lucide="more-horizontal" class="w-5 h-5"></i></button>
+          <div id="dotsMenu" class="hidden absolute right-0 top-[52px] w-[260px] glass2 rounded-2xl p-2 shadow-2xl origin-top-right"></div>
+        </div>
+        <button id="burger" aria-label="Open menu" class="lg:hidden w-10 h-10 rounded-full bg-white text-black flex items-center justify-center"><i data-lucide="menu" class="w-5 h-5"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 z-[85] hidden">
+  <div class="absolute inset-0 bg-[#09090B]/85 backdrop-blur-2xl"></div>
+  <div class="relative h-full flex flex-col p-6 pt-5 max-w-[1440px] mx-auto">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-[#D4FF3F] flex items-center justify-center font-display font-black text-black">N</div><div class="font-display font-black">NEXORA</div></div>
+      <button id="mobileClose" aria-label="Close menu" class="w-12 h-12 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center"><i data-lucide="x" class="w-6 h-6"></i></button>
+    </div>
+    <nav id="mobileLinks" class="flex-1 flex flex-col justify-center gap-1"></nav>
+    <div class="flex gap-3"><a href="#contact" class="btn-lime flex-1 rounded-2xl py-4 text-center mobile-close-link">Start a Project</a><a href="#/login" class="btn-ghost flex-1 rounded-2xl py-4 text-center mobile-close-link">Client Login</a></div>
+  </div>
+</div>
+
+<!-- VIEWS -->
+<div id="view-main">
+<main id="home">
+
+<!-- HERO -->
+<section id="hero" class="relative min-h-[100svh] flex items-center pt-[110px] pb-10 overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="absolute -top-[200px] -left-[200px] w-[600px] h-[600px] rounded-full bg-[#D4FF3F]/[0.07] blur-[120px] pointer-events-none"></div>
+  <div class="absolute top-[20%] right-[-150px] w-[550px] h-[550px] rounded-full bg-[#7C5CFF]/[0.14] blur-[130px] pointer-events-none"></div>
+  <div class="absolute bottom-[-200px] left-[30%] w-[500px] h-[400px] rounded-full bg-[#4DE8FF]/[0.06] blur-[120px] pointer-events-none"></div>
+  <div class="absolute top-[18%] left-[6%] micro text-white/30 hidden md:flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-[#D4FF3F] animate-pulse"></span> Accepting Q4 Growth Partners — 3 slots</div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block text-white/30 text-[10px] tracking-[.3em] uppercase font-grotesk">Scroll</div>
+
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8 w-full grid lg:grid-cols-[1.15fr_.85fr] gap-10 lg:gap-6 items-center relative">
+    <div>
+      <div class="rv inline-flex items-center gap-2 hairline rounded-full pl-2 pr-4 py-1.5 mb-6 bg-white/[0.03]">
+        <span class="bg-[#D4FF3F] text-black micro !text-[10px] font-bold px-3 py-1 rounded-full">New</span>
+        <span class="micro !text-[11px] text-white/70">Performance + Creative under one roof</span>
+      </div>
+      <h1 class="hero-h">
+        <span class="line-mask"><span style="animation-delay:.15s">Creative</span></span>
+        <span class="line-mask"><span style="animation-delay:.28s" class="outline-text">Systems built</span></span>
+        <span class="line-mask"><span style="animation-delay:.41s">to make <span class="lime-text">attention</span></span></span>
+        <span class="line-mask"><span style="animation-delay:.54s">convert<span class="lime-text">.</span></span></span>
+      </h1>
+      <p class="rv rv-d2 mt-6 max-w-[520px] text-white/60 text-[16px] md:text-[18px] leading-relaxed">We run paid media, SEO, content and CRO as one revenue system — not disconnected services. Fewer vanity metrics. More pipeline, sales and repeat buyers.</p>
+      <div class="rv rv-d3 mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="#contact" class="btn-lime rounded-full px-8 py-4 inline-flex items-center justify-center gap-2 text-[14px]">Start a Project <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        <a href="#work" class="btn-ghost rounded-full px-8 py-4 inline-flex items-center justify-center gap-2 text-[14px] font-grotesk">Explore Our Work <i data-lucide="play" class="w-4 h-4"></i></a>
+      </div>
+      <div class="rv rv-d4 mt-8 flex items-center gap-4">
+        <div class="flex -space-x-3">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" class="w-10 h-10 rounded-full border-2 border-[#09090B] object-cover" alt="client"/>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" class="w-10 h-10 rounded-full border-2 border-[#09090B] object-cover" alt="client"/>
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" class="w-10 h-10 rounded-full border-2 border-[#09090B] object-cover" alt="client"/>
+          <div class="w-10 h-10 rounded-full bg-[#D4FF3F] text-black text-[11px] font-bold flex items-center justify-center border-2 border-[#09090B]">48+</div>
+        </div>
+        <div class="text-[13px] text-white/60"><span class="text-white font-semibold">48+ brands scaled</span> across DTC, local & B2B<br/><span class="text-[#D4FF3F]">★★★★★ 4.9/5 partner rating</span></div>
+      </div>
+    </div>
+
+    <!-- Hero visual -->
+    <div id="heroVisual" class="relative h-[560px] md:h-[620px] hidden sm:block">
+      <div class="absolute inset-4 rounded-[28px] overflow-hidden hairline">
+        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=900&q=80" alt="Creative studio" class="w-full h-full object-cover opacity-70"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#09090B] via-[#09090B]/30 to-transparent"></div>
+        <div class="absolute inset-0 grid-bg opacity-40"></div>
+      </div>
+      <!-- floating cards -->
+      <div class="float-a absolute top-6 -left-2 md:left-2 glass rounded-2xl p-4 w-[190px] glow-lime" data-parallax="18">
+        <div class="micro !text-[10px] text-white/50">Blended ROAS</div>
+        <div class="font-display font-black text-[34px] leading-none mt-1">3.7<span class="lime-text">x</span></div>
+        <div class="mt-2 h-[36px]"><canvas id="spark1" width="160" height="36"></canvas></div>
+        <div class="text-[11px] text-[#D4FF3F] mt-1 font-grotesk">▲ +24% last 30 days</div>
+      </div>
+      <div class="float-b absolute top-[210px] -right-1 md:right-2 glass rounded-2xl p-4 w-[200px]" data-parallax="30">
+        <div class="flex items-center justify-between"><div class="micro !text-[10px] text-white/50">Leads</div><span class="text-[10px] bg-[#D4FF3F]/15 text-[#D4FF3F] px-2 py-0.5 rounded-full font-bold">+68%</span></div>
+        <div class="font-display font-black text-[30px] mt-1">2,418</div>
+        <div class="flex gap-1 items-end mt-2 h-[44px]" id="bars"></div>
+      </div>
+      <div class="float-a absolute bottom-[130px] left-4 md:left-8 glass rounded-2xl p-4 w-[220px]" data-parallax="12" style="animation-delay:1s">
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-[#7C5CFF] flex items-center justify-center"><i data-lucide="flask-conical" class="w-4 h-4 text-white"></i></div><div class="text-[12px] font-bold">Creative test winner</div></div>
+        <div class="mt-2 text-[12px] text-white/60">UGC Hook V3 — <span class="text-white">CTR 2.8% vs 1.1%</span></div>
+        <div class="mt-2 h-1.5 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-[82%] bg-gradient-to-r from-[#D4FF3F] to-[#4DE8FF] rounded-full"></div></div>
+      </div>
+      <div class="absolute bottom-4 right-4 left-4 glass2 rounded-2xl p-4 flex items-center justify-between" data-parallax="8">
+        <div><div class="micro !text-[10px] text-white/50">Live pipeline this week</div><div class="font-grotesk font-bold">£184,200 attributed revenue</div></div>
+        <div class="w-11 h-11 rounded-full bg-[#D4FF3F] flex items-center justify-center text-black"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 md:hidden"><div class="w-[22px] h-[36px] rounded-full border border-white/20 flex justify-center pt-2"><div class="w-1 h-2 rounded-full bg-[#D4FF3F] animate-bounce"></div></div></div>
+</section>
+
+<!-- HERO METRICS -->
+<section class="border-y border-white/[0.07] bg-[#0E0E10]">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="rv"><div class="font-display font-black text-[42px] md:text-[54px] leading-none"><span class="count" data-count="120">0</span>+</div><div class="micro text-muted mt-2">Campaigns launched*</div></div>
+    <div class="rv rv-d1"><div class="font-display font-black text-[42px] md:text-[54px] leading-none"><span class="count" data-count="48">0</span>+</div><div class="micro text-muted mt-2">Brands partnered*</div></div>
+    <div class="rv rv-d2"><div class="font-display font-black text-[42px] md:text-[54px] leading-none text-[#D4FF3F]"><span class="count" data-count="3.7" data-dec="1">0</span>x</div><div class="micro text-muted mt-2">Average blended ROAS*</div></div>
+    <div class="rv rv-d3"><div class="font-display font-black text-[42px] md:text-[54px] leading-none"><span class="count" data-count="92">0</span>%</div><div class="micro text-muted mt-2">Client retention*</div></div>
+  </div>
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8 pb-5"><p class="text-[11px] text-white/30 font-grotesk">*Demo figures shown for design preview. Final metrics confirmed during onboarding audit.</p></div>
+</section>
+
+<!-- TRUSTED BY -->
+<section class="py-10 overflow-hidden">
+  <div class="text-center micro text-white/40 mb-6">Trusted by ambitious teams</div>
+  <div class="relative">
+    <div class="absolute left-0 top-0 bottom-0 w-[120px] bg-gradient-to-r from-[#09090B] to-transparent z-10"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-[120px] bg-gradient-to-l from-[#09090B] to-transparent z-10"></div>
+    <div class="marquee-track gap-14 items-center px-6" id="brandStrip"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 md:py-28 relative">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div><div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>01 — Services</div>
+      <h2 class="rv h-sec">Everything you need<br/>to <span class="lime-text">grow,</span> nothing<br/>you don't.</h2></div>
+      <p class="rv max-w-[360px] text-white/60 text-[15px] leading-relaxed">Twelve capabilities. One operating system. Pick a single service or hand us the full funnel — every engagement starts with a revenue model, not a retainer pitch.</p>
+    </div>
+    <div class="rv flex items-center gap-3 mb-8 text-[13px] font-grotesk text-white/60"><span class="w-2 h-2 rounded-full bg-[#D4FF3F] animate-pulse"></span> Hover to isolate • Click any card for deliverables <span class="hidden md:inline ml-auto micro !text-[10px] text-white/30">Cursor-reactive field — desktop</span></div>
+    <div id="svcGrid" class="svc-wrap grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 md:py-28 bg-[#0E0E10] border-y border-white/[0.07] relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#7C5CFF]/10 blur-[140px] rounded-full"></div>
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-5"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>02 — Who we are</div>
+      <h2 class="rv h-sec">We combine creative instinct with <span class="outline-text">performance</span> discipline.</h2>
+      <p class="rv rv-d1 mt-6 text-white/60 text-[16px] leading-relaxed max-w-[540px]">Nexora was built by media buyers who got tired of pretty reports and designers who got tired of ugly ads. Today we're a 14-person team running full-funnel growth for e-commerce, local and B2B brands across the UK, US and Gulf. No juniors learning on your budget. No 40-slide decks. Strategy, creative and media in one weekly sprint.</p>
+      <div class="rv rv-d2 mt-8 grid grid-cols-3 gap-4 max-w-[540px]">
+        <div class="hairline rounded-2xl p-4 bg-white/[0.02]"><div class="font-display font-black text-2xl">14</div><div class="micro !text-[10px] text-muted mt-1">Senior operators</div></div>
+        <div class="hairline rounded-2xl p-4 bg-white/[0.02]"><div class="font-display font-black text-2xl text-[#D4FF3F]">6</div><div class="micro !text-[10px] text-muted mt-1">Countries served</div></div>
+        <div class="hairline rounded-2xl p-4 bg-white/[0.02]"><div class="font-display font-black text-2xl">9</div><div class="micro !text-[10px] text-muted mt-1">Industries deep</div></div>
+      </div>
+    </div>
+    <div class="rv rv-d2 relative">
+      <div class="glass rounded-[28px] p-7 md:p-9 relative overflow-hidden">
+        <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#D4FF3F] via-[#4DE8FF] to-[#7C5CFF]"></div>
+        <div class="flex items-start gap-5">
+          <div class="relative shrink-0"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Founder" class="w-[110px] h-[130px] object-cover rounded-2xl"/><div class="absolute -bottom-2 -right-2 w-9 h-9 rounded-full bg-[#D4FF3F] flex items-center justify-center text-black"><i data-lucide="badge-check" class="w-5 h-5"></i></div></div>
+          <div><div class="micro text-[#D4FF3F]">Founder & Strategy Lead</div><div class="font-display font-black text-2xl mt-1">Adrian Vale</div><div class="text-[13px] text-white/50 mt-1">Ex-agency director • £30M+ ad spend managed</div>
+          <div class="flex gap-2 mt-3"><a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a><a href="#" aria-label="X" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="twitter" class="w-4 h-4"></i></a><a href="#" aria-label="Mail" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="mail" class="w-4 h-4"></i></a></div></div>
+        </div>
+        <p class="mt-6 text-[18px] md:text-[20px] leading-snug font-grotesk text-white/90">“If it doesn't move pipeline, we don't sell it. Our job is to make every pound you spend feel inevitable.”</p>
+        <div class="mt-5 flex flex-wrap gap-2"><span class="text-[11px] px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10">Growth Strategy</span><span class="text-[11px] px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10">Paid Social</span><span class="text-[11px] px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10">CRO</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="py-20 md:py-28">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>03 — Why Nexora</div>
+    <h2 class="rv h-sec mb-10">Principles we<br/>actually <span class="lime-text">operate on.</span></h2>
+    <div id="whyGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="py-20 md:py-24 bg-[#0E0E10] border-y border-white/[0.07]">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8 grid lg:grid-cols-[.9fr_1.1fr] gap-10">
+    <div><div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>04 — Industries</div>
+      <h2 class="rv h-sec">Deep reps<br/>in your<br/>arena.</h2>
+      <p class="rv mt-5 text-white/60 max-w-[380px]">Select an industry to see a real-world result pattern from our playbook.</p>
+      <div id="indPills" class="rv mt-6 flex flex-wrap gap-2"></div>
+    </div>
+    <div class="rv rv-d1 glass rounded-[24px] p-7 md:p-10 relative overflow-hidden min-h-[340px] flex flex-col justify-between">
+      <div id="indContent"></div>
+      <div class="mt-8 flex items-center justify-between"><div class="micro text-white/40">Result pattern — demo data</div><a href="#contact" class="btn-lime rounded-full px-5 py-2.5 text-[12px] inline-flex items-center gap-2">Get this playbook <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div>
+      <div class="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#D4FF3F]/10 blur-[100px] rounded-full pointer-events-none"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="py-20 md:py-28 relative overflow-hidden">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>05 — Process</div>
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8"><h2 class="rv h-sec">From first call<br/>to compounding.</h2><div class="rv micro text-white/40">Drag / scroll • 6 steps • 21-day launch</div></div>
+    <div class="rv hairline rounded-full h-[3px] bg-white/[0.06] relative mb-8 overflow-hidden"><div id="procBar" class="absolute inset-0 bg-gradient-to-r from-[#D4FF3F] to-[#4DE8FF]"></div></div>
+    <div id="procTrack" class="flex lg:grid lg:grid-cols-6 gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2 -mx-4 px-4 md:mx-0 md:px-0"></div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="py-20 md:py-28 bg-[#0E0E10] border-y border-white/[0.07]">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>06 — Selected Work</div>
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8"><h2 class="rv h-sec">Work that<br/>paid for itself.</h2>
+      <div id="workFilters" class="rv flex flex-wrap gap-2"></div></div>
+    <div id="workGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- CASE STUDY FEATURED -->
+<section id="case" class="py-20 md:py-28 relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
+  <div class="max-w-[1240px] mx-auto px-4 md:px-8 relative">
+    <div class="rv micro text-center text-[#D4FF3F] mb-4">Featured case — NOVA SKIN</div>
+    <h2 class="rv h-sec text-center">How a skincare DTC went<br/>from <span class="outline-text">stuck</span> to <span class="lime-text">3.9x ROAS.</span></h2>
+    <div class="rv mt-10 glass rounded-[28px] overflow-hidden">
+      <div class="grid lg:grid-cols-[1fr_360px]">
+        <div class="p-7 md:p-10">
+          <div class="flex flex-wrap gap-2 mb-6"><span class="micro !text-[10px] px-3 py-1.5 rounded-full bg-[#D4FF3F] text-black font-bold">E-commerce</span><span class="micro !text-[10px] px-3 py-1.5 rounded-full hairline text-white/60">Meta + Google + CRO</span><span class="micro !text-[10px] px-3 py-1.5 rounded-full hairline text-white/60">90 days</span></div>
+          <div class="grid sm:grid-cols-2 gap-6 text-[14px] leading-relaxed">
+            <div><div class="micro text-[#D4FF3F] mb-2">Problem</div><p class="text-white/65">Scaling past £40k/mo broke efficiency. CAC up 46%, creative fatigue, PDP converting at 1.1%.</p></div>
+            <div><div class="micro text-[#4DE8FF] mb-2">Strategy</div><p class="text-white/65">Rebuilt account around 3 hero SKUs, UGC testing engine (12 hooks/week), and PDP + offer overhaul.</p></div>
+            <div><div class="micro text-[#7C5CFF] mb-2">Execution</div><p class="text-white/65">New creative system, Advantage+ consolidation, Google brand defense + PMax for hero bundles.</p></div>
+            <div><div class="micro text-white/60 mb-2">Optimization</div><p class="text-white/65">Weekly kill/scale rules, landing page A/Bs, post-purchase upsell lifting AOV 31%.</p></div>
+          </div>
+          <div class="mt-8 hairline rounded-2xl p-5 bg-black/30">
+            <div class="flex flex-wrap gap-2 mb-4" id="chartTabs"></div>
+            <div class="flex items-end justify-between mb-3"><div><div id="chartVal" class="font-display font-black text-[42px] leading-none">+182%</div><div id="chartLbl" class="micro text-muted mt-1">Leads growth</div></div><div class="text-[12px] text-[#D4FF3F] font-grotesk">▲ Live demo chart</div></div>
+            <canvas id="caseChart" height="160" class="w-full"></canvas>
+          </div>
+        </div>
+        <div class="bg-[#D4FF3F] text-black p-7 md:p-10 flex flex-col justify-between">
+          <div><div class="micro !text-black/60">Result in 90 days</div><div class="font-display font-black text-[56px] leading-[.9] mt-2">3.9x<br/>ROAS</div><div class="mt-4 space-y-3 text-[14px] font-medium"><div class="flex justify-between border-b border-black/15 pb-2"><span>CAC</span><span class="font-bold">-38%</span></div><div class="flex justify-between border-b border-black/15 pb-2"><span>Conversion rate</span><span class="font-bold">1.1% → 2.9%</span></div><div class="flex justify-between border-b border-black/15 pb-2"><span>Revenue/mo</span><span class="font-bold">£41k → £128k</span></div></div></div>
+          <a href="#contact" class="mt-8 bg-black text-white rounded-full py-4 text-center font-grotesk font-bold text-[14px] hover:scale-[1.02] transition">Have a similar challenge? →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERFORMANCE METRICS -->
+<section class="bg-[#D4FF3F] text-black py-14 md:py-20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.08] font-display font-black text-[18vw] leading-none whitespace-nowrap pointer-events-none select-none">GROWTH • GROWTH • GROWTH</div>
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8 grid grid-cols-2 lg:grid-cols-5 gap-8 relative">
+    <div><div class="font-display font-black text-[40px] md:text-[52px]">£12M+</div><div class="micro !text-black/60">Ad spend managed</div></div>
+    <div><div class="font-display font-black text-[40px] md:text-[52px]"><span class="count" data-count="320">0</span>%</div><div class="micro !text-black/60">Avg. lead uplift</div></div>
+    <div><div class="font-display font-black text-[40px] md:text-[52px]"><span class="count" data-count="42">0</span>%</div><div class="micro !text-black/60">Avg. CAC reduction</div></div>
+    <div><div class="font-display font-black text-[40px] md:text-[52px]"><span class="count" data-count="18">0</span>+</div><div class="micro !text-black/60">Awards & features</div></div>
+    <div class="col-span-2 lg:col-span-1"><div class="font-display font-black text-[40px] md:text-[52px]">24/7</div><div class="micro !text-black/60">Tracking & alerts</div></div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="py-20 md:py-28">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10"><div><div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>07 — Team</div><h2 class="rv h-sec">Operators,<br/>not account managers.</h2></div><div class="rv micro text-white/40">Swipe on mobile →</div></div>
+    <div id="teamTrack" class="rv flex lg:grid lg:grid-cols-6 gap-4 overflow-x-auto no-scrollbar snap-x -mx-4 px-4 md:mx-0 md:px-0"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-20 md:py-24 bg-[#0E0E10] border-y border-white/[0.07] overflow-hidden">
+  <div class="max-w-[1000px] mx-auto px-4 md:px-8 text-center">
+    <div class="rv micro text-[#D4FF3F] mb-4">08 — Client words</div>
+    <h2 class="rv h-sec !text-[clamp(1.8rem,4vw,3.2rem)]">Don't take our word for it.</h2>
+    <div class="rv mt-10 glass rounded-[28px] p-8 md:p-12 relative min-h-[300px]" id="testiBox">
+      <div class="text-[#D4FF3F] text-[60px] font-display leading-none absolute top-4 left-8">“</div>
+      <div id="testiContent" class="pt-8"></div>
+      <div class="flex items-center justify-center gap-3 mt-8">
+        <button id="tPrev" aria-label="Previous" class="w-11 h-11 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
+        <div id="tDots" class="flex gap-2"></div>
+        <button id="tNext" aria-label="Next" class="w-11 h-11 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="arrow-right" class="w-5 h-5"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-20 md:py-28">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+    <div class="text-center"><div class="rv micro text-[#D4FF3F] mb-4 justify-center flex items-center gap-3"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>09 — Pricing<span class="w-8 h-[1px] bg-[#D4FF3F]"></span></div>
+    <h2 class="rv h-sec">Simple plans.<br/>Serious output.</h2>
+    <p class="rv text-white/50 mt-4">Starting prices. Every plan is scoped after a free audit — no bloated retainers.</p></div>
+    <div id="priceGrid" class="mt-12 grid md:grid-cols-3 gap-5 items-stretch"></div>
+    <p class="text-center text-[12px] text-white/40 mt-6 font-grotesk">Need something custom? <a href="#contact" class="text-[#D4FF3F] underline">Build My Growth Plan →</a></p>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights" class="py-20 md:py-24 bg-[#0E0E10] border-y border-white/[0.07]">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10"><div><div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>10 — Insights</div><h2 class="rv h-sec">Thinking that<br/>pays for itself.</h2></div><a href="#insights" class="rv btn-ghost rounded-full px-6 py-3 text-[13px] font-grotesk">View all articles</a></div>
+    <div id="insightGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 md:py-28">
+  <div class="max-w-[860px] mx-auto px-4 md:px-8">
+    <div class="text-center mb-10"><div class="rv micro text-[#D4FF3F] mb-4">11 — FAQ</div><h2 class="rv h-sec !text-[clamp(2rem,5vw,3.6rem)]">Straight answers.</h2></div>
+    <div id="faqList" class="space-y-3"></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="px-4 md:px-8 pb-6">
+  <div class="rv max-w-[1440px] mx-auto rounded-[32px] overflow-hidden relative bg-[#D4FF3F] text-black p-10 md:p-20 text-center">
+    <div class="absolute inset-0 opacity-[0.07] grid-bg"></div>
+    <div class="relative"><div class="micro !text-black/60 mb-4">Ready when you are</div>
+    <h2 class="font-display font-black uppercase leading-[.9] tracking-tight text-[clamp(2.4rem,7vw,6rem)]">Your next growth<br/>story starts here.</h2>
+    <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center"><a href="#contact" class="bg-black text-white rounded-full px-9 py-4 font-grotesk font-bold text-[14px] hover:scale-105 transition inline-flex items-center justify-center gap-2">Start a Project <i data-lucide="arrow-right" class="w-4 h-4"></i></a><a href="#" onclick="openChat();return false;" class="rounded-full px-9 py-4 font-grotesk font-bold text-[14px] border-2 border-black/20 hover:bg-black hover:text-white transition inline-flex items-center justify-center gap-2">Talk to an Expert</a></div>
+    <div class="mt-6 text-[13px] font-medium text-black/60">Free 30-min audit • Response within 24h • No pushy sales call</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 md:py-28">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-8 grid lg:grid-cols-[.85fr_1.15fr] gap-10">
+    <div><div class="rv micro text-[#D4FF3F] flex items-center gap-3 mb-4"><span class="w-8 h-[1px] bg-[#D4FF3F]"></span>12 — Contact</div>
+      <h2 class="rv h-sec">Let's build something worth talking about.</h2>
+      <p class="rv mt-5 text-white/60">Tell us where you are and where you need to be. We'll reply with honest next steps — even if we're not the right fit.</p>
+      <div class="rv mt-8 space-y-4 text-[14px]">
+        <div class="flex items-center gap-3 glass rounded-2xl p-4"><div class="w-10 h-10 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center"><i data-lucide="mail" class="w-5 h-5"></i></div><div><div class="micro !text-[10px] text-muted">Email</div><div class="font-bold">hello@nexoragrowth.co</div></div></div>
+        <div class="flex items-center gap-3 glass rounded-2xl p-4"><div class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center"><i data-lucide="phone" class="w-5 h-5"></i></div><div><div class="micro !text-[10px] text-muted">Phone / WhatsApp</div><div class="font-bold">+44 20 7946 0821 (demo)</div></div></div>
+        <div class="flex items-center gap-3 glass rounded-2xl p-4"><div class="w-10 h-10 rounded-full bg-[#7C5CFF] text-white flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5"></i></div><div><div class="micro !text-[10px] text-muted">Response time</div><div class="font-bold">Within 1 business day</div></div></div>
+      </div>
+    </div>
+    <div class="rv rv-d1 glass rounded-[28px] p-7 md:p-10">
+      <div class="flex items-center justify-between mb-2"><div class="micro text-white/50">Step <span id="stepNum">1</span> of 4</div><div class="micro text-[#D4FF3F]" id="stepLbl">Your details</div></div>
+      <div class="h-1.5 rounded-full bg-white/10 overflow-hidden mb-8"><div id="formProg" class="h-full bg-[#D4FF3F] rounded-full transition-all duration-500" style="width:25%"></div></div>
+      <div id="formSteps"></div>
+      <div class="flex gap-3 mt-8"><button id="backBtn" class="btn-ghost rounded-full px-6 py-3 text-[13px] font-grotesk hidden">← Back</button><button id="nextBtn" class="btn-lime rounded-full px-8 py-3 text-[13px] flex-1">Continue →</button></div>
+      <p class="text-[11px] text-white/30 mt-4 text-center">By submitting you agree to our Privacy Policy. Demo form — no data leaves your browser.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="px-4 md:px-8 pb-20">
+  <div class="max-w-[1200px] mx-auto hairline rounded-[28px] p-8 md:p-12 bg-gradient-to-br from-[#18181B] to-[#0E0E10] flex flex-col md:flex-row items-center gap-8">
+    <div class="flex-1"><h3 class="font-display font-black text-[28px] md:text-[36px] leading-tight">Useful growth ideas.<br/><span class="text-[#D4FF3F]">No noise.</span></h3><p class="text-white/50 text-[14px] mt-2">One tactical email every two weeks. Read by 4,200+ founders.</p></div>
+    <div class="flex-1 w-full"><div id="newsWrap" class="flex flex-col sm:flex-row gap-3"><input id="newsEmail" type="email" placeholder="you@company.com" class="flex-1 bg-white/[0.05] border border-white/15 rounded-full px-6 py-4 outline-none focus:border-[#D4FF3F] transition text-[14px]"/><button id="newsBtn" class="btn-lime rounded-full px-8 py-4 text-[13px] whitespace-nowrap">Subscribe</button></div><div id="newsOk" class="hidden items-center gap-3 bg-[#D4FF3F]/10 border border-[#D4FF3F]/30 rounded-2xl p-5"><div class="w-10 h-10 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center"><i data-lucide="check" class="w-5 h-5"></i></div><div><div class="font-bold">You're in.</div><div class="text-[13px] text-white/60">First issue lands this Friday.</div></div></div></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/[0.07] bg-[#060607] pt-16 pb-8">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-8">
+    <h2 class="font-display font-black uppercase leading-[.9] text-[clamp(2rem,6vw,5rem)] tracking-tight">Let's build<br/>something <span class="lime-text">worth talking</span> about.</h2>
+    <div class="mt-10 grid md:grid-cols-4 gap-8 text-[14px]">
+      <div><div class="flex items-center gap-3 mb-4"><div class="w-9 h-9 rounded-lg bg-[#D4FF3F] flex items-center justify-center font-display font-black text-black">N</div><div class="font-display font-black">NEXORA GROWTH</div></div><p class="text-white/50">Creative systems built to make attention convert. London • New York • Dubai</p><div class="flex gap-2 mt-4"><a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="instagram" class="w-4 h-4"></i></a><a href="#" aria-label="Linkedin" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a><a href="#" aria-label="Twitter" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="twitter" class="w-4 h-4"></i></a><a href="#" aria-label="Youtube" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="youtube" class="w-4 h-4"></i></a></div></div>
+      <div><div class="micro text-white/40 mb-4">Explore</div><div class="space-y-2.5 text-white/70"><a href="#services" class="block hover:text-[#D4FF3F]">Services</a><a href="#work" class="block hover:text-[#D4FF3F]">Work</a><a href="#pricing" class="block hover:text-[#D4FF3F]">Pricing</a><a href="#insights" class="block hover:text-[#D4FF3F]">Insights</a><a href="#faq" class="block hover:text-[#D4FF3F]">FAQ</a></div></div>
+      <div><div class="micro text-white/40 mb-4">Company</div><div class="space-y-2.5 text-white/70"><a href="#about" class="block hover:text-[#D4FF3F]">About</a><a href="#process" class="block hover:text-[#D4FF3F]">Process</a><a href="#team" class="block hover:text-[#D4FF3F]">Team</a><a href="#contact" class="block hover:text-[#D4FF3F]">Contact</a><a href="#/login" class="block hover:text-[#D4FF3F]">Client Portal →</a></div></div>
+      <div><div class="micro text-white/40 mb-4">Legal</div><div class="space-y-2.5 text-white/70"><a href="#" class="block hover:text-[#D4FF3F]">Privacy Policy</a><a href="#" class="block hover:text-[#D4FF3F]">Terms of Service</a><a href="#" class="block hover:text-[#D4FF3F]">Cookie Settings</a></div><a href="#contact" class="btn-lime rounded-full px-6 py-3 text-[12px] inline-flex mt-5">Start a Project</a></div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-white/[0.07] flex flex-col md:flex-row justify-between gap-3 text-[12px] text-white/35 font-grotesk"><span>© 2026 Nexora Growth Ltd. All rights reserved.</span><span>Designed & engineered in-house • Phase 1 marketing site</span></div>
+  </div>
+</footer>
+</main>
+</div>
+
+<!-- SUB VIEWS (router) -->
+<div id="view-sub" class="hidden min-h-[100svh] pt-[110px] pb-20 px-4 md:px-8">
+  <div class="max-w-[1100px] mx-auto" id="subContent"></div>
+</div>
+
+<!-- SERVICE DRAWER -->
+<div id="overlay" class="overlay"></div>
+<aside id="svcDrawer" class="glass2 md:rounded-l-[28px] p-7 md:p-9 overflow-auto" role="dialog" aria-modal="true" aria-label="Service details">
+  <div id="drawerContent"></div>
+</aside>
+
+<!-- GENERIC MODAL -->
+<div id="modal" class="modal-card"><div class="inner w-full max-w-[860px] glass2 rounded-[28px] overflow-hidden"><div id="modalContent"></div></div></div>
+
+<!-- ORB + CHAT -->
+<button id="orbBtn" aria-label="Open assistant" class="fixed bottom-5 right-5 z-[97] w-[60px] h-[60px] rounded-full bg-[#D4FF3F] text-black flex items-center justify-center shadow-2xl hover:scale-110 transition"><i data-lucide="message-circle" class="w-6 h-6"></i><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#7C5CFF] border-2 border-[#09090B]"></span></button>
+<div id="chatPanel" class="glass2 rounded-[24px] overflow-hidden flex flex-col" role="dialog" aria-label="Assistant">
+  <div class="p-4 bg-gradient-to-r from-[#18181B] to-[#1F1F23] border-b border-white/10 flex items-center gap-3">
+    <div class="w-10 h-10 rounded-full bg-[#D4FF3F] flex items-center justify-center font-display font-black text-black">N</div>
+    <div class="flex-1"><div class="font-bold text-[14px]">Nexora Assistant</div><div class="text-[11px] text-[#D4FF3F] flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#D4FF3F] animate-pulse"></span> Online • replies instantly</div></div>
+    <button onclick="toggleChat(false)" aria-label="Minimize" class="w-9 h-9 rounded-full hairline flex items-center justify-center hover:bg-white/10"><i data-lucide="minus" class="w-4 h-4"></i></button>
+  </div>
+  <div class="flex gap-2 p-3 border-b border-white/10">
+    <button id="tabHuman" class="flex-1 rounded-full py-2.5 text-[12px] font-grotesk font-bold bg-[#D4FF3F] text-black transition">Human Agent</button>
+    <button id="tabAI" class="flex-1 rounded-full py-2.5 text-[12px] font-grotesk font-bold bg-white/[0.06] text-white/70 transition">AI Agent (NOVA)</button>
+  </div>
+  <div id="paneHuman" class="flex-1 overflow-auto p-5 space-y-4">
+    <div class="glass rounded-2xl p-5 text-center"><div class="w-14 h-14 mx-auto rounded-full overflow-hidden border-2 border-[#D4FF3F]"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" class="w-full h-full object-cover" alt="Specialist"/></div><div class="font-bold mt-3">Talk to a specialist</div><div class="text-[12px] text-white/55 mt-1">Maya — Growth Strategist<br/>Available Mon–Fri, 9am–6pm GMT<br/>Avg. response: under 2 hours</div></div>
+    <div class="micro text-white/40">Quick starters — tap one:</div>
+    <div class="flex flex-col gap-2">
+      <button class="starter text-left hairline rounded-xl px-4 py-3 text-[13px] hover:border-[#D4FF3F] hover:bg-[#D4FF3F]/5 transition">I need a marketing strategy</button>
+      <button class="starter text-left hairline rounded-xl px-4 py-3 text-[13px] hover:border-[#D4FF3F] hover:bg-[#D4FF3F]/5 transition">I want Google Ads</button>
+      <button class="starter text-left hairline rounded-xl px-4 py-3 text-[13px] hover:border-[#D4FF3F] hover:bg-[#D4FF3F]/5 transition">I need more leads</button>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+      <a href="#contact" onclick="toggleChat(false)" class="rounded-xl bg-[#D4FF3F] text-black text-center py-3 text-[12px] font-bold">Contact form</a>
+      <a href="mailto:hello@nexoragrowth.co" class="rounded-xl hairline text-center py-3 text-[12px] font-bold hover:border-[#D4FF3F]">Email us</a>
+      <a href="tel:+442079460821" class="rounded-xl hairline text-center py-3 text-[12px] font-bold hover:border-[#D4FF3F]">Call (demo)</a>
+      <a href="#" class="rounded-xl bg-[#25D366]/15 border border-[#25D366]/40 text-[#25D366] text-center py-3 text-[12px] font-bold">WhatsApp</a>
+    </div>
+  </div>
+  <div id="paneAI" class="flex-1 hidden flex-col overflow-hidden">
+    <div id="chatMsgs" class="flex-1 overflow-auto p-4 space-y-3"></div>
+    <div id="chips" class="flex gap-2 overflow-x-auto no-scrollbar px-4 pb-2"></div>
+    <div class="p-3 border-t border-white/10 flex gap-2"><input id="chatIn" placeholder="Ask NOVA anything…" class="flex-1 bg-white/[0.05] border border-white/15 rounded-full px-4 py-3 text-[13px] outline-none focus:border-[#D4FF3F]"/><button id="chatSend" aria-label="Send" class="w-11 h-11 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center shrink-0"><i data-lucide="send" class="w-4 h-4"></i></button></div>
+  </div>
+</div>
+
+<div id="toasts"></div>
+
+<script>
+/* ============================================================
+  NEXORA GROWTH — Phase 1 Frontend
+  Centralized data (Future: populate from database)
+  Form abstraction: submitProjectInquiry(payload)
+  Future: connect to API | Future: role-based routing
+============================================================ */
+const siteConfig = { brand:"Nexora Growth", email:"hello@nexoragrowth.co", phone:"+44 20 7946 0821", tagline:"Creative systems built to make attention convert." };
+
+const servicesData = [
+  {icon:"target", name:"Digital Strategy", desc:"A revenue roadmap before a single pound is spent.", benefit:"Know exactly what to do, in what order.", deliverables:["Growth audit & opportunity map","90-day channel plan","Forecast model + KPIs"], outcome:"+32% avg. efficiency in 60 days"},
+  {icon:"zap", name:"Performance Marketing", desc:"Full-funnel paid media run as one P&L.", benefit:"Scale spend without breaking ROAS.", deliverables:["Account rebuild","Creative testing sprints","Weekly kill/scale system"], outcome:"3.7x blended ROAS average*"},
+  {icon:"search", name:"Google Ads", desc:"Capture high-intent demand on Search, Shopping & YouTube.", benefit:"Own page one for buying keywords.", deliverables:["Build / rebuild","Feed + PMax setup","Landing page pairing"], outcome:"-42% avg. CPL on Search*"},
+  {icon:"thumbs-up", name:"Meta Ads", desc:"Scroll-stopping creative + structured testing on Meta.", benefit:"Turn paid social into a growth engine.", deliverables:["Creative engine (12 hooks/wk)","Advantage+ structure","Retargeting ladders"], outcome:"+68% lead volume*"},
+  {icon:"share-2", name:"Social Media", desc:"Organic content that compounds paid performance.", benefit:"A brand people remember and trust.", deliverables:["Content pillars + calendar","Short-form production","Community playbook"], outcome:"4.2x avg. reach growth"},
+  {icon:"globe", name:"SEO / Local SEO", desc:"Rank for terms that actually drive revenue.", benefit:"Compounding pipeline without ad cost.", deliverables:["Technical + content audit","Location pages & GBP","Authority links"], outcome:"+210% organic leads*"},
+  {icon:"pen-tool", name:"Content Strategy", desc:"Messaging, angles and assets that sell.", benefit:"Never wonder what to post again.", deliverables:["Messaging house","90-day content map","Briefs + scripts"], outcome:"2.4x content output"},
+  {icon:"megaphone", name:"Creative Campaigns", desc:"Big ideas engineered for performance.", benefit:"Brand heat that converts.", deliverables:["Campaign concept","UGC + studio assets","Launch kit"], outcome:"2.8% hero CTR vs 1.1%"},
+  {icon:"mouse-pointer-click", name:"CRO", desc:"Turn more of your existing traffic into revenue.", benefit:"More sales without more spend.", deliverables:["Heuristic + data audit","A/B testing roadmap","PDP / landing rebuilds"], outcome:"+54% avg. conversion lift"},
+  {icon:"mail", name:"Email Marketing", desc:"Flows and campaigns that print retention.", benefit:"30%+ revenue from owned audience.", deliverables:["7 core flows","Weekly campaigns","Segmentation"], outcome:"38% repeat purchase rate"},
+  {icon:"workflow", name:"Marketing Automation", desc:"CRM, lead routing and nurture on autopilot.", benefit:"No lead left behind.", deliverables:["CRM setup","Lead scoring","Nurture sequences"], outcome:"-60% lead response time"},
+  {icon:"bar-chart-3", name:"Analytics & Attribution", desc:"Know exactly what's working — and why.", benefit:"Decisions on data, not gut feel.", deliverables:["GA4 + server tracking","Dashboards","Attribution model"], outcome:"98% tracking accuracy"},
+];
+const projectsData = [
+  {slug:"nova-skin", client:"NOVA SKIN", industry:"E-commerce", service:"Performance", tags:["Performance","E-commerce"], result:"3.9x ROAS in 90 days", metrics:{ROAS:"3.9x", Revenue:"+212%", CAC:"-38%"}, img:"https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80", desc:"Skincare DTC stuck at £40k/mo. Rebuilt creative engine + PDP, scaled to £128k/mo."},
+  {slug:"urbankey", client:"URBANKEY", industry:"Real Estate", service:"Lead Gen", tags:["Lead Gen"], result:"+68% qualified viewings", metrics:{Leads:"+68%", CPL:"-31%", Close:"+22%"}, img:"https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80", desc:"Estate agency group. Google + Meta lead system with instant routing and nurture."},
+  {slug:"lumera", client:"LUMERA", industry:"E-commerce", service:"E-commerce", tags:["E-commerce","Performance"], result:"+184% revenue, 4.1x ROAS", metrics:{ROAS:"4.1x", AOV:"+31%", CVR:"2.9%"}, img:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80", desc:"Jewellery brand. Hero-SKU focus, PMax + UGC engine, upsell flows."},
+  {slug:"cliniq", client:"CLINIQ", industry:"Healthcare", service:"SEO", tags:["SEO","Lead Gen"], result:"+240% organic bookings", metrics:{Traffic:"+240%", Bookings:"+156%", CAC:"-44%"}, img:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80", desc:"Private clinic chain. Local SEO domination across 6 locations + review engine."},
+  {slug:"bloom-house", client:"BLOOM HOUSE", industry:"Hospitality", service:"Social", tags:["Social","Brand Growth"], result:"4.8x engagement, sold-out weekends", metrics:{Reach:"+420%", Bookings:"+94%", Followers:"+38k"}, img:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", desc:"Restaurant group. Short-form content system + local influencer engine."},
+  {slug:"futurelab", client:"FUTURELAB", industry:"SaaS", service:"Brand Growth", tags:["Brand Growth","SEO"], result:"$48 → $21 CAC in 5 months", metrics:{CAC:"-56%", Demos:"+132%", SEO:"+310%"}, img:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80", desc:"B2B SaaS. Demand-gen engine: SEO clusters + LinkedIn + demo CRO."},
+  {slug:"vertex-legal", client:"VERTEX LEGAL", industry:"Professional Services", service:"Lead Gen", tags:["Lead Gen","SEO"], result:"212 high-value cases", metrics:{Cases:"212", CPL:"-39%", ROI:"6.2x"}, img:"https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80", desc:"Law firm. Search domination + intake automation for premium cases."},
+  {slug:"apex-fitness", client:"APEX FITNESS", industry:"Personal Brands", service:"Social", tags:["Social","Performance"], result:"120k → 890k followers", metrics:{Followers:"+640%", Revenue:"+178%", CTR:"3.4%"}, img:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80", desc:"Coach personal brand. Content + funnel system turning attention into programs."},
+];
+const teamData = [
+  {name:"Adrian Vale", role:"Founder & Strategy Lead", img:"https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80", tag:"Strategy • Paid Social • CRO"},
+  {name:"Sofia Marchetti", role:"Performance Specialist", img:"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80", tag:"Google • Meta • TikTok"},
+  {name:"Jonas Reid", role:"Creative Strategist", img:"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80", tag:"Hooks • UGC • Concepts"},
+  {name:"Priya Nair", role:"SEO Specialist", img:"https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80", tag:"Technical • Local • Links"},
+  {name:"Elena Torres", role:"Content & Social Lead", img:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80", tag:"Short-form • Calendars"},
+  {name:"Marcus Chen", role:"Designer / Motion", img:"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80", tag:"Ads • Landing • Motion"},
+];
+const testimonialsData = [
+  {quote:"Nexora rebuilt our entire acquisition engine in three weeks. CAC dropped 38% while we tripled spend. First agency that talks revenue, not impressions.", name:"Hannah Cole", role:"Founder, Nova Skin", img:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80"},
+  {quote:"They operate like an in-house team with superpowers. Weekly sprints, clear reporting, creative that actually converts. Viewings up 68% in a quarter.", name:"Daniel Okafor", role:"Director, Urbankey", img:"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80"},
+  {quote:"Our organic bookings went from trickle to flood. Six locations ranking #1 locally. The review + GBP system alone paid for the engagement.", name:"Dr. Sarah Lindqvist", role:"Director, Cliniq", img:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80"},
+  {quote:"From $48 to $21 CAC in five months. Their SEO + demo CRO work completely changed our pipeline economics. Board-level impact.", name:"James Whitfield", role:"CEO, Futurelab", img:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80"},
+  {quote:"Sold-out weekends for two months straight. Their content system made us the most talked-about group in the city.", name:"Amara Bloom", role:"Owner, Bloom House", img:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80"},
+  {quote:"Transparent, fast, commercial. Every Monday we know exactly what shipped, what it cost, and what it returned. Rare.", name:"Oliver Grant", role:"Partner, Vertex Legal", img:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&q=80"},
+];
+const faqData = [
+  {q:"How fast will we see results?", a:"Paid media typically shows signal in 14–21 days and compounding gains by day 60–90. SEO and content compound over 3–6 months. We set honest forecasts in week one — no hype, just a model you can hold us to."},
+  {q:"What budgets do you work with?", a:"Most partners spend £3k–£50k/mo on media with management from £1,450/mo. Launch sprints start from £2,800 one-time. If you're pre-revenue, we'll tell you what to do yourself first — free."},
+  {q:"Do you require long contracts?", a:"No. Monthly rolling after an initial 90-day sprint. That sprint exists because real testing needs 90 days — not to lock you in. 92% of clients stay past month six by choice."},
+  {q:"Who will actually work on our account?", a:"Seniors only. Your pod is a strategist, media buyer and creative — no handoffs to juniors. You'll know them by name and speak to them weekly."},
+  {q:"How is reporting handled?", a:"One live dashboard (spend → revenue), one weekly Loom breakdown, one monthly strategy call. Every pound traced. If tracking breaks, we fix it before we spend another pound."},
+  {q:"Can you just run ads, or do you do creative too?", a:"Both — and that's the point. Media without creative is expensive. Every performance plan includes a creative testing engine: hooks, UGC briefs, statics and landing variants."},
+  {q:"Do you work with our in-house team?", a:"Yes — we embed via Slack, share playbooks, and train your team as we go. Many clients start fully managed and move to hybrid advisory in year two."},
+  {q:"What makes you different from other agencies?", a:"We run creative, media and CRO as one system with shared KPIs. No silos, no vanity metrics, no 40-slide decks. Strategy before execution, revenue before awards."},
+  {q:"What happens on the first call?", a:"A 30-minute working session: your numbers, your bottleneck, and whether we're a fit. You'll leave with 2–3 actionable ideas even if we never work together."},
+];
+const pricingData = [
+  {name:"Launch", price:"£1,450", per:"/mo starting from", desc:"For businesses that need one channel working properly, fast.", feats:["1 growth channel (Ads or SEO)","Creative / content starter pack","Landing page audit + fixes","Live dashboard + weekly Loom","Monthly strategy call"], cta:"Build My Growth Plan", hot:false},
+  {name:"Growth", price:"£2,950", per:"/mo starting from", desc:"Our most popular system: paid + creative + CRO compounding.", feats:["2–3 integrated channels","12 creative tests / month","CRO testing roadmap","Email flow (1 core flow)","Slack access + weekly sprints","Bi-weekly strategy calls"], cta:"Build My Growth Plan", hot:true},
+  {name:"Scale", price:"Custom", per:"strategy — let's scope it", desc:"Full-funnel ownership for teams spending £20k+/mo.", feats:["Full-funnel ownership","Dedicated growth pod","Unlimited creative iterations","Advanced attribution + MMM-lite","CRO + landing builds included","Weekly exec reporting"], cta:"Talk to an Expert", hot:false},
+];
+const insightsData = [
+  {cat:"Paid Social", title:"We tested 84 hooks in 30 days. Here's what actually moved CTR.", ex:"Hook rate beats production value 9 times out of 10. The exact framework we use to find winners.", time:"7 min read", date:"Sep 28, 2026", img:"https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&q=80"},
+  {cat:"Google Ads", title:"PMax is eating your budget. The containment playbook.", ex:"How we cut wasted PMax spend 41% while growing revenue — structure, signals, exclusions.", time:"9 min read", date:"Sep 18, 2026", img:"https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=600&q=80"},
+  {cat:"CRO", title:"Your PDP is leaking 40% of sales. Fix these 5 blocks.", ex:"A teardown of 30 DTC product pages — the patterns separating 1% from 3% conversion.", time:"6 min read", date:"Sep 05, 2026", img:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"},
+  {cat:"SEO", title:"Local SEO in 2026: the 90-day map-pack domination plan.", ex:"GBP, reviews, location pages — the exact sequence we used for 6 clinics.", time:"8 min read", date:"Aug 27, 2026", img:"https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=600&q=80"},
+  {cat:"Strategy", title:"The £10k/mo question: ads, SEO, or content first?", ex:"A decision tree based on margin, sales cycle and proof — stop guessing where to start.", time:"5 min read", date:"Aug 14, 2026", img:"https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"},
+];
+const industriesData = [
+  {n:"E-commerce", r:"LUMERA — 4.1x ROAS, AOV +31% via hero-SKU focus + UGC engine.", m:"+184% revenue in 120 days"},
+  {n:"Real Estate", r:"URBANKEY — 68% more qualified viewings with instant lead routing.", m:"CPL -31%"},
+  {n:"Healthcare", r:"CLINIQ — 6 locations ranking #1 locally, bookings +156%.", m:"+240% organic traffic"},
+  {n:"SaaS", r:"FUTURELAB — CAC $48 → $21 with SEO clusters + demo CRO.", m:"+132% demos"},
+  {n:"Professional Services", r:"VERTEX LEGAL — 212 premium cases via search + intake automation.", m:"6.2x ROI"},
+  {n:"Education", r:"Brightpath Academy — 3.2x enrollments with webinar funnel + YouTube.", m:"CPL -44%"},
+  {n:"Hospitality", r:"BLOOM HOUSE — sold-out weekends via short-form + local creators.", m:"+94% bookings"},
+  {n:"Local Business", r:"FixRight Plumbing — 5.1x calls with Local Service Ads + GBP engine.", m:"+310% calls"},
+  {n:"Technology", r:"NexaCloud — pipeline +210% with LinkedIn + technical content.", m:"SQLs +188%"},
+  {n:"Personal Brands", r:"APEX FITNESS — 120k → 890k followers, programs +178%.", m:"3.4% avg. CTR"},
+];
+const whyData = [
+  {t:"Strategy before execution", d:"Every engagement starts with a revenue model and forecast. If the maths doesn't work, we'll tell you before you pay us.", i:"compass"},
+  {t:"Creative with commercial intent", d:"Pretty doesn't pay. Every asset is briefed against a hook, angle and KPI — then tested until it wins.", i:"brush"},
+  {t:"Transparent reporting", d:"One dashboard, spend → revenue. You'll see what worked, what didn't, and what we killed — weekly.", i:"eye"},
+  {t:"Fast communication", d:"Slack access, 24h response SLA, weekly Looms. No ticket queues, no account-manager telephone.", i:"zap"},
+  {t:"Full-funnel thinking", d:"Ads, landing, email and offer work as one system. Fixing one leak rarely scales — we fix the funnel.", i:"filter"},
+  {t:"Continuous optimization", d:"Kill/scale rules run weekly. Creative refreshes, bid shifts, A/Bs — compounding, not set-and-forget.", i:"refresh-cw"},
+];
+
+/* ---------- helpers ---------- */
+const $ = s=>document.querySelector(s), $$ = s=>[...document.querySelectorAll(s)];
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function toast(msg){ const t=document.createElement('div'); t.className='toast'; t.innerHTML=`<div class="w-8 h-8 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center shrink-0"><i data-lucide="check" class="w-4 h-4"></i></div><div class="text-[13px] font-medium">${msg}</div>`; $('#toasts').appendChild(t); lucide.createIcons(); setTimeout(()=>{t.style.opacity='0';t.style.transform='translateY(10px)';setTimeout(()=>t.remove(),300)},3200); }
+
+/* ---------- preloader ---------- */
+window.addEventListener('load',()=>{ setTimeout(()=>{ $('#preloader').classList.add('done'); setTimeout(()=>$('#preloader').remove(),900); }, 1300); });
+setTimeout(()=>{ const p=$('#preloader'); if(p){p.classList.add('done'); setTimeout(()=>p.remove(),900);} }, 3000);
+
+/* ---------- cursor ---------- */
+(function(){
+  if(reduced || matchMedia('(pointer:coarse)').matches) return;
+  const dot=$('#cDot'), ring=$('#cRing'), label=$('#cLabel'), trail=$('#cTrail');
+  let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my,tx=mx,ty=my;
+  addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';label.style.left=mx+'px';label.style.top=my+'px';});
+  (function loop(){ rx+=(mx-rx)*.16; ry+=(my-ry)*.16; tx+=(mx-tx)*.07; ty+=(my-ty)*.07; ring.style.left=rx+'px';ring.style.top=ry+'px';trail.style.left=tx+'px';trail.style.top=ty+'px'; requestAnimationFrame(loop); })();
+  document.addEventListener('mouseover',e=>{ const t=e.target.closest('[data-cursor]'); if(t){ ring.classList.add('big'); label.textContent=t.dataset.cursor||'View'; } else { const h=e.target.closest('a,button'); if(h){ring.style.borderColor='#D4FF3F';ring.style.width='52px';ring.style.height='52px';} else {ring.classList.remove('big');ring.style.width='';ring.style.height='';ring.style.borderColor='';} } });
+})();
+
+/* ---------- nav ---------- */
+const dotsLinks=[["Client Portal","#/login","log-in"],["Pricing","#pricing","tag"],["Insights","#insights","newspaper"],["FAQ","#faq","help-circle"],["Contact","#contact","mail"]];
+$('#dotsMenu').innerHTML = dotsLinks.map(([t,h,i],ix)=>`<a href="${h}" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#D4FF3F]/10 hover:text-[#D4FF3F] transition text-[14px] font-medium dots-link" style="animation-delay:${ix*40}ms"><i data-lucide="${i}" class="w-4 h-4"></i>${t}</a>`).join('');
+const dotsBtn=$('#dotsBtn'), dotsMenu=$('#dotsMenu');
+dotsBtn.onclick=e=>{e.stopPropagation();const open=dotsMenu.classList.toggle('hidden');dotsBtn.setAttribute('aria-expanded',!open);if(!open){dotsMenu.style.animation='tin .3s cubic-bezier(.34,1.56,.64,1)';}};
+document.addEventListener('click',e=>{if(!dotsMenu.classList.contains('hidden')&&!e.target.closest('#dotsMenu')&&!e.target.closest('#dotsBtn'))dotsMenu.classList.add('hidden')});
+$$('.dots-link').forEach(a=>a.onclick=()=>dotsMenu.classList.add('hidden'));
+addEventListener('scroll',()=>{ $('#navInner').style.boxShadow = scrollY>30?'0 20px 60px rgba(0,0,0,.5)':''; },{passive:true});
+const mLinks=["Home|#home","Services|#services","Work|#work","About|#about","Process|#process","Contact|#contact"];
+$('#mobileLinks').innerHTML=mLinks.map(([pair],i)=>{const[t,h]=pair.split('|');return `<a href="${h}" class="mobile-close-link font-display font-black uppercase text-[clamp(2rem,9vw,3.2rem)] leading-[1.05] hover:text-[#D4FF3F] transition" style="opacity:0;transform:translateY(20px);transition:.5s ${i*60}ms">${t}</a>`}).join('');
+function openMobile(o){ const m=$('#mobileMenu'); m.classList.toggle('hidden',!o); document.body.style.overflow=o?'hidden':''; if(o) requestAnimationFrame(()=>$$('#mobileLinks a').forEach(a=>{a.style.opacity='1';a.style.transform='none'})); }
+$('#burger').onclick=()=>openMobile(true); $('#mobileClose').onclick=()=>openMobile(false);
+$$('.mobile-close-link').forEach(a=>a.onclick=()=>openMobile(false));
+
+/* ---------- reveal + counters ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+function watchRv(){ $$('.rv:not(.in)').forEach(el=>io.observe(el)); }
+const cio=new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting)return; const el=e.target; cio.unobserve(el); const end=parseFloat(el.dataset.count), dec=parseInt(el.dataset.dec||0); const t0=performance.now(), dur=1600; (function f(t){ const p=Math.min(1,(t-t0)/dur), ease=1-Math.pow(1-p,3); el.textContent=(end*ease).toFixed(dec); if(p<1)requestAnimationFrame(f); })(t0); }),{threshold:.5});
+$$('.count').forEach(el=>cio.observe(el));
+
+/* ---------- hero decor ---------- */
+(function(){ const c=$('#spark1'); if(!c)return; const x=c.getContext('2d'); x.strokeStyle='#D4FF3F';x.lineWidth=2;x.beginPath(); [4,10,7,16,12,20,15,26,22,30].forEach((v,i)=>{const px=i*17+4, py=34-v; i?x.lineTo(px,py):x.moveTo(px,py)}); x.stroke(); const b=$('#bars'); for(let i=0;i<12;i++){ const d=document.createElement('div'); const h=12+Math.random()*32; d.style.cssText=`flex:1;border-radius:4px;background:${i>8?'#D4FF3F':'rgba(255,255,255,.18)'};height:${h}px`; b.appendChild(d);} })();
+if(!reduced){ const hv=$('#heroVisual'); document.addEventListener('mousemove',e=>{ if(!hv)return; const cx=(e.clientX/innerWidth-.5), cy=(e.clientY/innerHeight-.5); $$('#heroVisual [data-parallax]').forEach(el=>{ const f=parseFloat(el.dataset.parallax); el.style.translate=`${-cx*f}px ${-cy*f}px`; }); }); }
+
+/* ---------- brands ---------- */
+$('#brandStrip').innerHTML=[...["LUMA","NOVA","URBANKEY","CLINIQ","VERTEX","BLOOM"],...["LUMA","NOVA","URBANKEY","CLINIQ","VERTEX","BLOOM"]].map(b=>`<span class="font-display font-black text-[26px] md:text-[32px] tracking-tight text-white/25 hover:text-white transition whitespace-nowrap">${b}<span class="text-[#D4FF3F]">.</span></span>`).join('');
+
+/* ---------- services ---------- */
+$('#svcGrid').innerHTML=servicesData.map((s,i)=>`
+  <article class="svc-card rv ${i%4===1?'rv-d1':i%4===2?'rv-d2':i%4===3?'rv-d3':''} glass rounded-3xl p-6 cursor-pointer group min-h-[250px] flex flex-col" data-svc="${i}" data-cursor="Explore" tabindex="0" role="button" aria-label="${s.name}">
+    <div class="flex items-start justify-between"><div class="w-12 h-12 rounded-2xl bg-white/[0.06] border border-white/10 flex items-center justify-center group-hover:bg-[#D4FF3F] group-hover:text-black transition"><i data-lucide="${s.icon}" class="w-5 h-5"></i></div><span class="micro !text-[10px] text-white/25">0${i+1}</span></div>
+    <h3 class="font-display font-800 font-extrabold text-[19px] mt-5 leading-tight">${s.name}</h3>
+    <p class="svc-desc text-[13px] text-white/55 mt-2 leading-relaxed max-h-0 opacity-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-[120px] group-[.active]:opacity-100">${s.desc}<br/><span class="text-[#D4FF3F] font-medium">→ ${s.benefit}</span></p>
+    <div class="mt-auto pt-4 flex items-center justify-between"><span class="text-[12px] font-grotesk text-white/40">Deliverables + outcome</span><span class="w-9 h-9 rounded-full hairline flex items-center justify-center group-hover:bg-[#D4FF3F] group-hover:text-black group-hover:border-[#D4FF3F] transition"><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span></div>
+  </article>`).join('');
+const svcWrap=$('#svcGrid');
+function bindSvc(){ $$('#svcGrid .svc-card').forEach(card=>{
+  card.addEventListener('mouseenter',()=>{ svcWrap.classList.add('dim'); card.classList.add('active'); });
+  card.addEventListener('mouseleave',()=>{ svcWrap.classList.remove('dim'); card.classList.remove('active'); });
+  card.addEventListener('mousemove',e=>{ if(reduced||matchMedia('(pointer:coarse)').matches)return; const r=card.getBoundingClientRect(), x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; card.style.transform=`perspective(800px) rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-4px)`; });
+  card.addEventListener('mouseleave',()=>card.style.transform='');
+  const open=()=>openDrawer(parseInt(card.dataset.svc));
+  card.addEventListener('click',open); card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+});}
+bindSvc();
+function openDrawer(i){ const s=servicesData[i];
+  $('#drawerContent').innerHTML=`
+    <div class="flex items-start justify-between mb-6"><div class="w-14 h-14 rounded-2xl bg-[#D4FF3F] text-black flex items-center justify-center"><i data-lucide="${s.icon}" class="w-6 h-6"></i></div><button onclick="closeAll()" aria-label="Close" class="w-11 h-11 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black transition"><i data-lucide="x" class="w-5 h-5"></i></button></div>
+    <div class="micro text-[#D4FF3F]">Service — 0${i+1} / 12</div>
+    <h3 class="font-display font-black text-[34px] leading-tight mt-2">${s.name}</h3>
+    <p class="text-white/60 mt-3">${s.desc}</p>
+    <div class="mt-6"><div class="micro text-white/40 mb-3">Why it matters</div><p class="text-[15px] leading-relaxed bg-[#D4FF3F]/[0.07] border border-[#D4FF3F]/25 rounded-2xl p-5">${s.benefit} We scope this against your revenue model first — so you know the expected return before we start.</p></div>
+    <div class="mt-6"><div class="micro text-white/40 mb-3">What's included</div><div class="space-y-2">${s.deliverables.map(d=>`<div class="flex items-center gap-3 hairline rounded-xl px-4 py-3 text-[14px]"><span class="w-6 h-6 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center shrink-0"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>${d}</div>`).join('')}</div></div>
+    <div class="mt-6 rounded-2xl bg-white/[0.04] border border-white/10 p-5 flex items-center justify-between"><div><div class="micro !text-[10px] text-muted">Typical outcome*</div><div class="font-display font-black text-xl text-[#D4FF3F]">${s.outcome}</div></div><i data-lucide="trending-up" class="w-8 h-8 text-[#D4FF3F]"></i></div>
+    <a href="#contact" onclick="closeAll()" class="btn-lime rounded-full w-full py-4 mt-6 flex items-center justify-center gap-2 text-[14px]">Discuss This Service <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    <p class="text-[11px] text-white/30 mt-3 text-center">*Demo outcome range. Confirmed in your free audit.</p>`;
+  lucide.createIcons(); $('#overlay').classList.add('show'); $('#svcDrawer').classList.add('show'); document.body.style.overflow='hidden';
+}
+function closeAll(){ $('#overlay').classList.remove('show'); $('#svcDrawer').classList.remove('show'); $('#modal').classList.remove('show'); document.body.style.overflow=''; }
+$('#overlay').onclick=closeAll;
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAll();toggleChat(false);openMobile(false);}});
+
+/* ---------- why ---------- */
+$('#whyGrid').innerHTML=whyData.map((w,i)=>`
+  <div class="rv group hairline rounded-3xl p-7 bg-white/[0.02] hover:bg-[#D4FF3F]/[0.05] hover:border-[#D4FF3F]/40 transition-all duration-300 hover:-translate-y-1.5" data-cursor="More">
+    <div class="w-12 h-12 rounded-2xl bg-white/[0.06] flex items-center justify-center group-hover:bg-[#D4FF3F] group-hover:text-black transition"><i data-lucide="${w.i}" class="w-5 h-5"></i></div>
+    <h3 class="font-display font-extrabold text-[20px] mt-5">0${i+1} — ${w.t}</h3>
+    <p class="text-[14px] text-white/55 mt-3 leading-relaxed max-h-0 opacity-0 group-hover:max-h-[140px] group-hover:opacity-100 transition-all duration-400 overflow-hidden max-lg:max-h-[140px] max-lg:opacity-100">${w.d}</p>
+  </div>`).join('');
+
+/* ---------- industries ---------- */
+let indIx=0;
+$('#indPills').innerHTML=industriesData.map((x,i)=>`<button data-ind="${i}" class="ind-pill text-[13px] font-grotesk px-4 py-2.5 rounded-full border transition ${i===0?'bg-[#D4FF3F] text-black border-[#D4FF3F] font-bold':'border-white/15 text-white/60 hover:border-[#D4FF3F] hover:text-white'}">${x.n}</button>`).join('');
+function renderInd(){ const x=industriesData[indIx]; $('#indContent').innerHTML=`<div class="micro text-[#D4FF3F]">${x.n}</div><h3 class="font-display font-black text-[26px] md:text-[34px] leading-tight mt-3">${x.r}</h3><div class="mt-5 inline-flex items-center gap-2 bg-[#D4FF3F] text-black font-display font-black text-[18px] px-5 py-2.5 rounded-full">${x.m}</div><p class="text-white/50 text-[14px] mt-5">Playbook includes channel mix, offer structure, creative angles and the exact reporting we run for ${x.n.toLowerCase()} clients.</p>`; $$('.ind-pill').forEach((b,i)=>{ b.className=`ind-pill text-[13px] font-grotesk px-4 py-2.5 rounded-full border transition ${i===indIx?'bg-[#D4FF3F] text-black border-[#D4FF3F] font-bold':'border-white/15 text-white/60 hover:border-[#D4FF3F] hover:text-white'}`; }); }
+$$('.ind-pill').forEach(b=>b.onclick=()=>{indIx=+b.dataset.ind;renderInd();}); renderInd();
+setInterval(()=>{ if(document.hidden)return; indIx=(indIx+1)%industriesData.length; renderInd(); },6000);
+
+/* ---------- process ---------- */
+const steps=[["Discover","Week 1","Audit, tracking check, customer interviews. We find the bottleneck worth fixing first.","search"],["Strategy","Week 1–2","Revenue model, channel plan, forecast. You approve numbers before we spend.","map"],["Create","Week 2–3","Hooks, ads, pages, flows. Built in sprints, reviewed with you on Loom.","palette"],["Launch","Week 3","Controlled rollout with guardrails. Budgets ramp only when efficiency holds.","rocket"],["Optimize","Ongoing","Weekly kill/scale, A/B tests, creative refresh. Compounding gains.","trending-up"],["Scale","Month 3+","Winners get fuel. New channels, offers and markets — systematically.","expand"]];
+$('#procTrack').innerHTML=steps.map((s,i)=>`<div class="proc-step snap-start shrink-0 w-[270px] lg:w-auto glass rounded-3xl p-6 hover:border-[#D4FF3F]/40 transition" data-step="${i}"><div class="step-num">0${i+1}</div><div class="micro text-[#D4FF3F] mt-3">${s[1]}</div><h3 class="font-display font-black text-[22px] mt-1 flex items-center gap-2"><i data-lucide="${s[3]}" class="w-5 h-5 text-[#D4FF3F]"></i>${s[0]}</h3><p class="text-[13px] text-white/55 mt-3 leading-relaxed">${s[2]}</p></div>`).join('');
+const procTrack=$('#procTrack');
+function procUpd(){ const max=procTrack.scrollWidth-procTrack.clientWidth; const p=max>0?procTrack.scrollLeft/max: (scrollY/(document.body.scrollHeight-innerHeight)); $('#procBar').style.transform=`scaleX(${Math.min(1,Math.max(.06,p+.06))})`; }
+procTrack.addEventListener('scroll',procUpd,{passive:true}); addEventListener('scroll',procUpd,{passive:true});
+let drag=false,sx=0,sl=0; procTrack.addEventListener('pointerdown',e=>{drag=true;sx=e.clientX;sl=procTrack.scrollLeft;}); addEventListener('pointermove',e=>{if(drag)procTrack.scrollLeft=sl-(e.clientX-sx);}); addEventListener('pointerup',()=>drag=false);
+
+/* ---------- work ---------- */
+const filters=["All","Performance","SEO","Social","E-commerce","Lead Gen","Brand Growth"];
+let wf="All";
+$('#workFilters').innerHTML=filters.map(f=>`<button data-f="${f}" class="filter-btn text-[12px] font-grotesk px-4 py-2 rounded-full border border-white/15 text-white/60 ${f==='All'?'active':''}">${f}</button>`).join('');
+function renderWork(){ const list=projectsData.filter(p=>wf==="All"||p.tags.includes(wf));
+  $('#workGrid').innerHTML=list.map(p=>`
+  <article class="work-card group glass rounded-3xl overflow-hidden cursor-pointer hover:border-[#D4FF3F]/40 transition hover:-translate-y-1.5 duration-300" data-slug="${p.slug}" data-cursor="View Case" tabindex="0" role="button" aria-label="${p.client}">
+    <div class="relative h-[220px] overflow-hidden"><img src="${p.img}" alt="${p.client}" loading="lazy" class="w-full h-full object-cover"/><div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+    <span class="absolute top-4 left-4 micro !text-[10px] px-3 py-1.5 rounded-full bg-black/60 backdrop-blur border border-white/15">${p.industry}</span>
+    <span class="absolute top-4 right-4 micro !text-[10px] px-3 py-1.5 rounded-full bg-[#D4FF3F] text-black font-bold">${p.result}</span></div>
+    <div class="p-6"><div class="flex items-center justify-between"><h3 class="font-display font-black text-[22px]">${p.client}</h3><span class="text-white/40 text-[12px] font-grotesk">${p.service}</span></div>
+    <p class="text-[13px] text-white/55 mt-2">${p.desc}</p>
+    <div class="flex gap-2 mt-4">${Object.entries(p.metrics).map(([k,v])=>`<span class="text-[11px] px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10"><b class="text-[#D4FF3F]">${v}</b> ${k}</span>`).join('')}</div>
+    <div class="work-cta mt-4 text-[13px] font-bold text-[#D4FF3F] flex items-center gap-2">View case study <i data-lucide="arrow-right" class="w-4 h-4"></i></div></div>
+  </article>`).join('');
+  lucide.createIcons(); $$('#workGrid .work-card').forEach(c=>{ c.onclick=()=>openCase(c.dataset.slug); c.onkeydown=e=>{if(e.key==='Enter')openCase(c.dataset.slug)}; });
+}
+$$('#workFilters .filter-btn').forEach(b=>b.onclick=()=>{ wf=b.dataset.f; $$('#workFilters .filter-btn').forEach(x=>x.classList.remove('active')); b.classList.add('active'); renderWork(); });
+renderWork();
+function openCase(slug){ const p=projectsData.find(x=>x.slug===slug); if(!p)return;
+  $('#modalContent').innerHTML=`<div class="grid md:grid-cols-2"><div class="relative h-[260px] md:h-auto min-h-[300px]"><img src="${p.img}" class="absolute inset-0 w-full h-full object-cover" alt="${p.client}"/><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:bg-gradient-to-r"></div></div>
+  <div class="p-7 md:p-9"><button onclick="closeAll()" class="float-right w-10 h-10 rounded-full hairline flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black"><i data-lucide="x" class="w-5 h-5"></i></button>
+  <div class="micro text-[#D4FF3F]">${p.industry} • ${p.service}</div><h3 class="font-display font-black text-[36px] mt-2">${p.client}</h3>
+  <div class="mt-2 inline-block bg-[#D4FF3F] text-black font-bold text-[13px] px-4 py-2 rounded-full">${p.result}</div>
+  <p class="text-white/60 text-[14px] mt-4 leading-relaxed">${p.desc} Full narrative covers problem, strategy, execution, optimization and the exact numbers — shared on your intro call.</p>
+  <div class="grid grid-cols-3 gap-3 mt-5">${Object.entries(p.metrics).map(([k,v])=>`<div class="hairline rounded-2xl p-3 text-center bg-white/[0.03]"><div class="font-display font-black text-[20px] text-[#D4FF3F]">${v}</div><div class="micro !text-[9px] text-muted mt-1">${k}</div></div>`).join('')}</div>
+  <div class="mt-5 space-y-2 text-[13px]"><div><b class="text-white">Problem →</b> <span class="text-white/55">Inefficient scale, creative fatigue.</span></div><div><b class="text-white">Strategy →</b> <span class="text-white/55">Hero-offer focus, testing engine, funnel rebuild.</span></div><div><b class="text-white">Result →</b> <span class="text-white/55">${p.result} with guardrailed scaling.</span></div></div>
+  <a href="#contact" onclick="closeAll()" class="btn-lime rounded-full w-full py-4 mt-6 flex items-center justify-center gap-2 text-[13px]">Have a similar challenge? <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div></div>`;
+  lucide.createIcons(); $('#modal').classList.add('show'); document.body.style.overflow='hidden';
+}
+$('#modal').addEventListener('click',e=>{ if(e.target.id==='modal') closeAll(); });
+
+/* ---------- case chart ---------- */
+const chartSets={ "Leads":{v:"+182%",l:"Leads growth",d:[12,18,15,28,34,42,55,68,82]}, "CPL":{v:"-41%",l:"Cost per lead",d:[80,74,70,62,55,50,44,40,36]}, "ROAS":{v:"3.9x",l:"Blended ROAS",d:[1.4,1.6,1.5,2.1,2.6,2.9,3.2,3.6,3.9]}, "Conversion Rate":{v:"2.9%",l:"PDP conversion",d:[1.1,1.2,1.4,1.6,1.9,2.2,2.4,2.7,2.9]} };
+let ck="Leads";
+$('#chartTabs').innerHTML=Object.keys(chartSets).map(k=>`<button data-ct="${k}" class="ctab text-[12px] font-grotesk px-4 py-2 rounded-full border transition ${k===ck?'bg-[#D4FF3F] text-black border-[#D4FF3F] font-bold':'border-white/15 text-white/60'}">${k}</button>`).join('');
+function drawChart(){ const c=$('#caseChart'); const x=c.getContext('2d'); const W=c.width=c.offsetWidth*2, H=c.height=320; x.clearRect(0,0,W,H); const d=chartSets[ck].d, mx=Math.max(...d), mn=Math.min(...d);
+  x.strokeStyle='rgba(255,255,255,.08)'; for(let i=0;i<4;i++){x.beginPath();x.moveTo(0,H/4*i);x.lineTo(W,H/4*i);x.stroke();}
+  const grad=x.createLinearGradient(0,0,W,0); grad.addColorStop(0,'#D4FF3F'); grad.addColorStop(1,'#4DE8FF');
+  x.strokeStyle=grad; x.lineWidth=5; x.lineJoin='round'; x.beginPath();
+  d.forEach((v,i)=>{ const px=40+i*(W-80)/(d.length-1), py=H-40-((v-mn)/(mx-mn+.001))*(H-90); i?x.lineTo(px,py):x.moveTo(px,py); }); x.stroke();
+  x.fillStyle='rgba(212,255,63,.12)'; x.lineTo(W-40,H); x.lineTo(40,H); x.closePath(); x.fill();
+  d.forEach((v,i)=>{ const px=40+i*(W-80)/(d.length-1), py=H-40-((v-mn)/(mx-mn+.001))*(H-90); x.fillStyle='#D4FF3F'; x.beginPath();x.arc(px,py,7,0,7);x.fill(); x.fillStyle='#09090B';x.beginPath();x.arc(px,py,3,0,7);x.fill(); });
+  $('#chartVal').textContent=chartSets[ck].v; $('#chartLbl').textContent=chartSets[ck].l;
+}
+$$('.ctab').forEach(b=>b.onclick=()=>{ ck=b.dataset.ct; $$('.ctab').forEach(x=>x.className=`ctab text-[12px] font-grotesk px-4 py-2 rounded-full border transition ${x.dataset.ct===ck?'bg-[#D4FF3F] text-black border-[#D4FF3F] font-bold':'border-white/15 text-white/60'}`); drawChart(); });
+addEventListener('resize',()=>{try{drawChart()}catch(e){}}); setTimeout(drawChart,600);
+
+/* ---------- team ---------- */
+$('#teamTrack').innerHTML=teamData.map(t=>`
+  <div class="group snap-start shrink-0 w-[220px] lg:w-auto glass rounded-3xl overflow-hidden hover:border-[#D4FF3F]/50 transition hover:-translate-y-1.5 duration-300" data-cursor="Hello">
+    <div class="relative h-[240px] overflow-hidden"><img src="${t.img}" alt="${t.name}" loading="lazy" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition duration-500"/><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div><div class="absolute bottom-3 left-3 right-3"><div class="font-display font-extrabold text-[17px] leading-tight">${t.name}</div><div class="micro !text-[9px] text-[#D4FF3F]">${t.role}</div></div></div>
+    <div class="p-4 text-[12px] text-white/55">${t.tag}</div>
+  </div>`).join('');
+
+/* ---------- testimonials ---------- */
+let ti=0, timer;
+function renderT(){ const t=testimonialsData[ti]; $('#testiContent').innerHTML=`<p class="text-[18px] md:text-[22px] leading-snug font-grotesk text-white/90 max-w-[700px] mx-auto">${t.quote}</p><div class="flex items-center justify-center gap-3 mt-6"><img src="${t.img}" class="w-12 h-12 rounded-full object-cover border-2 border-[#D4FF3F]" alt="${t.name}"/><div class="text-left"><div class="font-bold text-[14px]">${t.name}</div><div class="text-[12px] text-white/50">${t.role}</div></div><div class="text-[#D4FF3F] text-[13px] ml-2">★★★★★</div></div>`;
+  $('#tDots').innerHTML=testimonialsData.map((_,i)=>`<button aria-label="Go to ${i+1}" data-d="${i}" class="h-2 rounded-full transition-all ${i===ti?'w-8 bg-[#D4FF3F]':'w-2 bg-white/20'}"></button>`).join('');
+  $$('#tDots button').forEach(b=>b.onclick=()=>{ti=+b.dataset.d;renderT();resetT();});
+}
+function resetT(){ clearInterval(timer); timer=setInterval(()=>{ti=(ti+1)%testimonialsData.length;renderT();},6000); }
+$('#tNext').onclick=()=>{ti=(ti+1)%testimonialsData.length;renderT();resetT();};
+$('#tPrev').onclick=()=>{ti=(ti-1+testimonialsData.length)%testimonialsData.length;renderT();resetT();};
+document.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'&&!$('#view-main').classList.contains('hidden')){ti=(ti+1)%testimonialsData.length;renderT();} if(e.key==='ArrowLeft'&&!$('#view-main').classList.contains('hidden')){ti=(ti-1+testimonialsData.length)%testimonialsData.length;renderT();} });
+let tsx=0; const tb=$('#testiBox'); tb.addEventListener('touchstart',e=>tsx=e.touches[0].clientX,{passive:true}); tb.addEventListener('touchend',e=>{ const dx=e.changedTouches[0].clientX-tsx; if(dx<-40){ti=(ti+1)%testimonialsData.length;renderT();resetT();} if(dx>40){ti=(ti-1+testimonialsData.length)%testimonialsData.length;renderT();resetT();} },{passive:true});
+renderT(); resetT();
+
+/* ---------- pricing ---------- */
+$('#priceGrid').innerHTML=pricingData.map(p=>`
+  <div class="rv rounded-[28px] p-8 flex flex-col ${p.hot?'bg-[#D4FF3F] text-black glow-lime md:-translate-y-3 md:scale-[1.02]':'glass'}">
+    ${p.hot?`<span class="micro !text-[10px] bg-black text-white px-4 py-1.5 rounded-full self-start mb-4">★ Most popular</span>`:`<span class="micro !text-[10px] px-4 py-1.5 rounded-full hairline text-white/50 self-start mb-4">${p.name} plan</span>`}
+    ${p.hot?'':`<div class="font-display font-black text-[22px]">${p.name}</div>`}
+    ${p.hot?`<div class="font-display font-black text-[22px]">Growth</div>`:''}
+    <div class="mt-2 flex items-end gap-2"><span class="font-display font-black text-[44px] leading-none">${p.price}</span></div><div class="micro !text-[11px] ${p.hot?'!text-black/60':'text-muted'} mt-1">${p.per}</div>
+    <p class="text-[14px] mt-3 ${p.hot?'text-black/70':'text-white/55'}">${p.desc}</p>
+    <div class="my-6 h-px ${p.hot?'bg-black/15':'bg-white/10'}"></div>
+    <div class="space-y-2.5 flex-1">${p.feats.map(f=>`<div class="flex items-center gap-3 text-[14px] font-medium"><span class="w-6 h-6 rounded-full ${p.hot?'bg-black text-white':'bg-[#D4FF3F] text-black'} flex items-center justify-center shrink-0"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>${f}</div>`).join('')}</div>
+    <a href="#contact" class="mt-7 rounded-full py-4 text-center font-grotesk font-bold text-[13px] transition hover:scale-[1.02] ${p.hot?'bg-black text-white':'bg-white/[0.06] border border-white/15 hover:border-[#D4FF3F] hover:text-[#D4FF3F]'}">${p.cta}</a>
+  </div>`).join('');
+
+/* ---------- insights ---------- */
+$('#insightGrid').innerHTML=insightsData.map((a,i)=>`
+  <article class="rv group glass rounded-3xl overflow-hidden cursor-pointer hover:border-[#D4FF3F]/40 hover:-translate-y-1.5 transition duration-300" data-ins="${i}" data-cursor="Read" tabindex="0" role="button">
+    <div class="relative h-[190px] overflow-hidden"><img src="${a.img}" loading="lazy" alt="${a.title}" class="w-full h-full object-cover group-hover:scale-108 group-hover:scale-110 transition duration-700"/><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><span class="absolute top-4 left-4 micro !text-[10px] px-3 py-1.5 rounded-full bg-[#D4FF3F] text-black font-bold">${a.cat}</span></div>
+    <div class="p-6"><h3 class="font-display font-extrabold text-[18px] leading-snug group-hover:text-[#D4FF3F] transition">${a.title}</h3><p class="text-[13px] text-white/55 mt-2">${a.ex}</p><div class="flex items-center justify-between mt-4 text-[12px] text-white/40 font-grotesk"><span>${a.time} • ${a.date}</span><span class="text-[#D4FF3F] font-bold">Read →</span></div></div>
+  </article>`).join('') + `<article class="rv glass rounded-3xl p-8 flex flex-col justify-center items-start border-dashed"><div class="micro text-[#D4FF3F]">Newsletter</div><h3 class="font-display font-black text-[24px] mt-2">Get one tactic<br/>every 2 weeks.</h3><a href="#contact" class="btn-lime rounded-full px-6 py-3 text-[12px] mt-5">Subscribe free</a></article>`;
+$$('#insightGrid [data-ins]').forEach(c=>{ const open=()=>{ const a=insightsData[+c.dataset.ins];
+  $('#modalContent').innerHTML=`<div class="relative h-[240px]"><img src="${a.img}" class="w-full h-full object-cover" alt=""/><div class="absolute inset-0 bg-gradient-to-t from-[#121214] to-transparent"></div><button onclick="closeAll()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/60 backdrop-blur flex items-center justify-center hover:bg-[#D4FF3F] hover:text-black"><i data-lucide="x" class="w-5 h-5"></i></button><span class="absolute bottom-4 left-7 micro !text-[10px] px-3 py-1.5 rounded-full bg-[#D4FF3F] text-black font-bold">${a.cat}</span></div><div class="p-7 md:p-10"><h3 class="font-display font-black text-[28px] leading-tight">${a.title}</h3><div class="micro text-white/40 mt-3">${a.time} • ${a.date} • By Nexora Strategy Team</div><p class="text-white/65 mt-5 leading-relaxed">${a.ex} This is a Phase-1 article placeholder shell — full long-form publishing (routes /insights/*) ships in the next build phase with CMS content. The framework, examples and templates referenced are delivered on your intro call today.</p><div class="hairline rounded-2xl p-5 mt-6 bg-[#D4FF3F]/[0.06] border-[#D4FF3F]/25 text-[14px]"><b class="text-[#D4FF3F]">Key takeaway:</b> Start with the offer and hook — channel tactics multiply what already converts.</div><a href="#contact" onclick="closeAll()" class="btn-lime rounded-full w-full py-4 mt-6 flex items-center justify-center gap-2 text-[13px]">Get the full playbook <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div>`; lucide.createIcons(); $('#modal').classList.add('show'); document.body.style.overflow='hidden'; };
+  c.onclick=open; c.onkeydown=e=>{if(e.key==='Enter')open()}; });
+
+/* ---------- faq ---------- */
+$('#faqList').innerHTML=faqData.map((f,i)=>`
+  <div class="faq-item rv glass rounded-2xl overflow-hidden ${i===0?'open':''}">
+    <button class="w-full flex items-center justify-between gap-4 p-5 md:p-6 text-left" aria-expanded="${i===0}">
+      <span class="font-bold text-[15px] md:text-[16px]">${f.q}</span>
+      <span class="faq-icon w-10 h-10 rounded-full hairline flex items-center justify-center shrink-0 text-[#D4FF3F]"><i data-lucide="plus" class="w-5 h-5"></i></span>
+    </button><div class="faq-a px-5 md:px-6"><p class="pb-6 text-[14px] text-white/60 leading-relaxed">${f.a}</p></div>
+  </div>`).join('');
+function faqBind(){ $$('.faq-item').forEach(it=>{ const btn=it.querySelector('button'), ans=it.querySelector('.faq-a');
+  const set=()=>{ ans.style.maxHeight = it.classList.contains('open')? ans.scrollHeight+'px':'0px'; btn.setAttribute('aria-expanded',it.classList.contains('open')); };
+  set(); btn.onclick=()=>{ const was=it.classList.contains('open'); $$('.faq-item').forEach(x=>{x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight='0px';x.querySelector('button').setAttribute('aria-expanded','false')}); if(!was){it.classList.add('open');set();} };
+});}
+faqBind();
+
+/* ---------- contact multi-step ---------- */
+/* Future: connect to API — UI separate from validation/submission */
+async function submitProjectInquiry(payload){ /* Future: POST /api/inquiries */ console.log("submitProjectInquiry",payload); await new Promise(r=>setTimeout(r,1400)); return {ok:true,id:"NX-"+Math.floor(Math.random()*90000+10000)}; }
+let step=0; const form={name:"",email:"",service:"Digital Strategy",budget:"£3k – £8k/mo",brief:""};
+const stepDefs=[
+  {lbl:"Your details", html:`<div class="grid sm:grid-cols-2 gap-4"><div class="fld"><input id="fName" placeholder=" " value="${form.name}"/><label>Full name *</label></div><div class="fld"><input id="fEmail" type="email" placeholder=" " value="${form.email}"/><label>Email address *</label></div></div><div class="grid sm:grid-cols-2 gap-4 mt-4"><div class="fld"><input id="fCo" placeholder=" "/><label>Company (optional)</label></div><div class="fld"><input id="fPhone" placeholder=" "/><label>Phone (optional)</label></div></div><div id="ferr" class="text-[13px] text-red-400 mt-3 hidden"></div>`},
+  {lbl:"Service + budget", html:`<div class="micro text-white/40 mb-3">Which service do you need?</div><div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="svcPick">${servicesData.slice(0,6).map(s=>`<button data-s="${s.name}" class="svcpick text-[12px] font-bold px-3 py-3 rounded-xl border transition ${form.service===s.name?'bg-[#D4FF3F] text-black border-[#D4FF3F]':'border-white/15 text-white/60 hover:border-[#D4FF3F]'}">${s.name}</button>`).join('')}</div><div class="micro text-white/40 mt-5 mb-3">Monthly budget</div><div class="grid grid-cols-2 gap-2" id="budPick">${["< £3k/mo","£3k – £8k/mo","£8k – £20k/mo","£20k+/mo"].map(b=>`<button data-b="${b}" class="budpick text-[13px] font-bold px-3 py-3 rounded-xl border transition ${form.budget===b?'bg-[#D4FF3F] text-black border-[#D4FF3F]':'border-white/15 text-white/60 hover:border-[#D4FF3F]'}">${b}</button>`).join('')}</div>`},
+  {lbl:"Your brief", html:`<div class="fld"><textarea id="fBrief" rows="5" placeholder=" ">${form.brief}</textarea><label>Tell us about your goals, timeline, what's not working… *</label></div><div class="flex flex-wrap gap-2 mt-4">${["I need more leads","I need lower CAC","I need better creative","I need SEO growth"].map(c=>`<button class="chip text-[12px] px-4 py-2 rounded-full hairline text-white/60 hover:border-[#D4FF3F] hover:text-[#D4FF3F] transition">${c}</button>`).join('')}</div><div id="ferr" class="text-[13px] text-red-400 mt-3 hidden"></div>`},
+  {lbl:"Confirmation", html:`<div class="hairline rounded-2xl p-6 bg-white/[0.03] text-[14px] space-y-3"><div class="flex justify-between"><span class="text-white/50">Name</span><b id="cName"></b></div><div class="flex justify-between"><span class="text-white/50">Email</span><b id="cEmail"></b></div><div class="flex justify-between"><span class="text-white/50">Service</span><b class="text-[#D4FF3F]" id="cSvc"></b></div><div class="flex justify-between"><span class="text-white/50">Budget</span><b id="cBud"></b></div><div class="pt-2 border-t border-white/10"><span class="text-white/50">Brief</span><p id="cBrief" class="mt-1 text-white/80"></p></div></div>`},
+];
+function renderStep(){ $('#stepNum').textContent=step+1; $('#stepLbl').textContent=stepDefs[step].lbl; $('#formProg').style.width=((step+1)/4*100)+'%'; $('#formSteps').innerHTML=stepDefs[step].html; $('#backBtn').classList.toggle('hidden',step===0); $('#nextBtn').textContent = step===3?"Submit inquiry ✓": step===2?"Review →":"Continue →";
+  if(step===0){ const n=$('#fName'),e=$('#fEmail'); n.value=form.name;e.value=form.email; n.oninput=()=>form.name=n.value; e.oninput=()=>form.email=e.value; }
+  if(step===1){ $$('.svcpick').forEach(b=>b.onclick=ev=>{ev.preventDefault();form.service=b.dataset.s;renderStep();}); $$('.budpick').forEach(b=>b.onclick=ev=>{ev.preventDefault();form.budget=b.dataset.b;renderStep();}); }
+  if(step===2){ const br=$('#fBrief'); br.oninput=()=>form.brief=br.value; $$('.chip').forEach(c=>c.onclick=ev=>{ev.preventDefault();form.brief=(form.brief?form.brief+" ":"")+c.textContent+". ";br.value=form.brief;}); }
+  if(step===3){ $('#cName').textContent=form.name;$('#cEmail').textContent=form.email;$('#cSvc').textContent=form.service;$('#cBud').textContent=form.budget;$('#cBrief').textContent=form.brief; }
+  lucide.createIcons();
+}
+renderStep();
+$('#backBtn').onclick=()=>{ if(step>0){step--;renderStep();} };
+$('#nextBtn').onclick=async()=>{
+  if(step===0){ if(form.name.trim().length<2){err("Please enter your name.");return;} if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email)){err("Please enter a valid email.");return;} }
+  if(step===2){ if(form.brief.trim().length<10){err("Tell us a little more (10+ characters).");return;} }
+  function err(m){ const e=$('#ferr'); e.textContent=m; e.classList.remove('hidden'); }
+  if(step<3){ step++; renderStep(); $('#formSteps').animate([{opacity:0,transform:'translateX(20px)'},{opacity:1,transform:'none'}],{duration:350,easing:'ease-out'}); return; }
+  const btn=$('#nextBtn'); btn.disabled=true; btn.innerHTML=`<span class="inline-flex items-center gap-2"><span class="w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin"></span>Sending…</span>`;
+  const res=await submitProjectInquiry({...form, company:($('#fCo')?.value||""), phone:($('#fPhone')?.value||""), projectType:"phase1-inquiry", submittedAt:new Date().toISOString(), source:"nexora-site-phase1"});
+  $('#formSteps').innerHTML=`<div class="text-center py-8"><div class="w-20 h-20 mx-auto rounded-full bg-[#D4FF3F] flex items-center justify-center"><i data-lucide="check" class="w-10 h-10 text-black"></i></div><h3 class="font-display font-black text-[28px] mt-5">Inquiry received.</h3><p class="text-white/55 mt-2 text-[14px]">Reference <b class="text-[#D4FF3F]">${res.id}</b> — we'll reply within 1 business day with honest next steps.</p><button onclick="step=0;renderStep();$('#nextBtn').disabled=false;" class="btn-ghost rounded-full px-6 py-3 text-[13px] mt-6">Send another</button></div>`;
+  lucide.createIcons(); $('#formProg').style.width='100%'; btn.disabled=false; btn.textContent="Done ✓"; toast("Project inquiry sent — reference "+res.id);
+};
+
+/* ---------- newsletter ---------- */
+$('#newsBtn').onclick=()=>{ const v=$('#newsEmail').value.trim(); if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){toast("Please enter a valid email.");return;} $('#newsWrap').classList.add('hidden'); $('#newsOk').classList.remove('hidden'); $('#newsOk').classList.add('flex'); toast("Subscribed — welcome aboard."); };
+
+/* ---------- chat ---------- */
+let chatOpen=false;
+function toggleChat(force){ chatOpen = force!==undefined?force:!chatOpen; $('#chatPanel').classList.toggle('show',chatOpen); }
+function openChat(){ toggleChat(true); }
+$('#orbBtn').onclick=()=>toggleChat();
+$('#tabHuman').onclick=()=>{ $('#paneHuman').classList.remove('hidden'); $('#paneAI').classList.add('hidden');$('#paneAI').classList.remove('flex'); $('#tabHuman').className='flex-1 rounded-full py-2.5 text-[12px] font-grotesk font-bold bg-[#D4FF3F] text-black transition'; $('#tabAI').className='flex-1 rounded-full py-2.5 text-[12px] font-grotesk font-bold bg-white/[0.06] text-white/70 transition'; };
+$('#tabAI').onclick=()=>{ $('#paneHuman').classList.add('hidden'); $('#paneAI').classList.remove('hidden');$('#paneAI').classList.add('flex'); $('#tabAI').className='flex-1 rounded-full py-2.5 text-[12px] font-grotesk font-bold bg-[#D4FF3F] text-black transition'; $('#tabHuman').className='flex-1 rounded-full py-2.5 text-[12px] font-grotesk font-bold bg-white/[0.06] text-white/70 transition'; };
+$$('.starter').forEach(s=>s.onclick=()=>{ toggleChat(true); $('#tabAI').click(); sendUser(s.textContent); setTimeout(()=>aiReply(s.textContent),600); });
+const novaKB=[
+  {k:["price","pricing","cost","much","retainer"],a:"Our Launch plan starts from £1,450/mo, Growth from £2,950/mo, and Scale is custom. Every quote follows a free audit so you only pay for what will move revenue. Want me to point you to the contact form?"},
+  {k:["service","offer","what do you do"],a:"We run 12 services as one system: Strategy, Performance Marketing, Google Ads, Meta Ads, Social, SEO/Local, Content, Creative Campaigns, CRO, Email, Automation and Analytics. Which one is your bottleneck right now?"},
+  {k:["seo","rank","google organic","local seo"],a:"Our SEO sprints cover technical fixes, content clusters and local domination (GBP + reviews + location pages). Typical pattern: +150–240% organic leads in 4–6 months. Want the local playbook?"},
+  {k:["google ads","ppc","search ads","pmax"],a:"We rebuild Google Ads around hero SKUs/offers: Search + Shopping + PMax with brand defense and landing pairing. Average pattern: -42% CPL on Search. Shall I book your free audit?"},
+  {k:["meta","facebook","instagram","tiktok ads"],a:"Meta works when creative does. We ship ~12 hooks/week, consolidate with Advantage+, and run retargeting ladders. Hero CTRs hit 2.8% vs 1.1% baseline."},
+  {k:["roas","return","results","proof","case"],a:"Blended ROAS across partners averages 3.7x (demo figure). Featured: Nova Skin hit 3.9x in 90 days, Lumera 4.1x. Scroll to Selected Work or ask about your industry."},
+  {k:["timeline","how long","fast","results when"],a:"Paid signal in 14–21 days, compounding by day 60–90. SEO compounds over 3–6 months. Our launch sprint is 21 days from kickoff to live."},
+  {k:["process","how work","steps","onboard"],a:"6 steps: Discover → Strategy → Create → Launch → Optimize → Scale. You approve a forecast before we spend a pound."},
+  {k:["contact","call","talk","human","email","phone"],a:"You can reach us at hello@nexoragrowth.co or +44 20 7946 0821 (demo). Or use the Contact section — we reply within 1 business day."},
+  {k:["ecommerce","e-commerce","shopify","dtc"],a:"For DTC we focus on hero SKUs, UGC engines and PDP CRO + upsells. Pattern: Lumera hit +184% revenue with AOV +31%. What's your current conversion rate?"},
+  {k:["leads","lead gen","b2b","real estate"],a:"Our lead systems pair Google + Meta with instant routing and nurture — Urbankey saw +68% qualified viewings. What's your current cost per lead?"},
+  {k:["budget","spend","minimum"],a:"Most partners spend £3k–£50k/mo on media. If you're under £3k, start with one channel done well — we'll tell you honestly on the intro call."},
+  {k:["email","klaviyo","flows","newsletter"],a:"We install 7 core flows (welcome, abandon, post-purchase…) plus weekly campaigns. Email often drives 30%+ of revenue within 90 days."},
+  {k:["content","social","organic"],a:"Organic compounds paid. We build pillars + short-form systems — Bloom House hit +420% reach and sold-out weekends."},
+  {k:["team","who","founder"],a:"We're a 14-person senior team led by Adrian Vale (ex-agency director, £30M+ managed). No juniors learning on your budget."},
+  {k:["location","where","based"],a:"We're in London with partners in the US and Gulf — fully remote-capable with Slack + weekly Looms."},
+  {k:["contract","commit","cancel"],a:"Monthly rolling after a 90-day sprint. 92% stay past month six — by choice, not contract."},
+  {k:["hi","hello","hey","yo"],a:"Hey! I'm NOVA, Nexora's demo assistant. Ask me about services, pricing, results, timelines — or tap a suggestion below."},
+  {k:["thank","thanks","great"],a:"Anytime! If you want a human to scope your growth plan, hit the Contact form — free 30-min audit included."},
+];
+function aiReply(q){ const box=$('#chatMsgs'); const t=document.createElement('div'); t.className='flex gap-2 items-end'; t.innerHTML=`<div class="w-7 h-7 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center text-[11px] font-black shrink-0">N</div><div class="bg-white/[0.07] border border-white/10 rounded-2xl rounded-bl-md px-4 py-3 text-[13px] typing"><span></span> <span></span> <span></span></div>`; box.appendChild(t); box.scrollTop=box.scrollHeight;
+  const low=q.toLowerCase(); const hit=novaKB.find(e=>e.k.some(k=>low.includes(k)));
+  setTimeout(()=>{ t.querySelector('.typing').classList.remove('typing'); t.querySelector('.typing, div:last-child').innerHTML = (hit?hit.a:"Good question — in this demo I cover services, pricing, results, timelines and process. For anything bespoke, a specialist replies within 2 hours via the Human tab. What industry are you in?"); box.scrollTop=box.scrollHeight; },900);
+}
+function sendUser(txt){ const box=$('#chatMsgs'); const d=document.createElement('div'); d.className='flex justify-end'; d.innerHTML=`<div class="bg-[#D4FF3F] text-black rounded-2xl rounded-br-md px-4 py-3 text-[13px] font-medium max-w-[85%]">${txt}</div>`; box.appendChild(d); box.scrollTop=box.scrollHeight; }
+function wireChat(){ const inp=$('#chatIn'); const go=()=>{ const v=inp.value.trim(); if(!v)return; inp.value=''; sendUser(v); aiReply(v); }; $('#chatSend').onclick=go; inp.addEventListener('keydown',e=>{if(e.key==='Enter')go();});
+  const chips=["Pricing?","Do you do SEO?","Show results","How fast?","I need more leads","Book a call"]; $('#chips').innerHTML=chips.map(c=>`<button class="shrink-0 text-[11px] font-bold px-3 py-2 rounded-full hairline text-white/60 hover:border-[#D4FF3F] hover:text-[#D4FF3F] transition">${c}</button>`).join(''); $$('#chips button').forEach(b=>b.onclick=()=>{sendUser(b.textContent);aiReply(b.textContent);});
+  $('#chatMsgs').innerHTML=`<div class="flex gap-2"><div class="w-7 h-7 rounded-full bg-[#D4FF3F] text-black flex items-center justify-center text-[11px] font-black shrink-0">N</div><div class="bg-white/[0.07] border border-white/10 rounded-2xl rounded-bl-md px-4 py-3 text-[13px]">Hey, I'm <b>NOVA</b> — Nexora's demo AI. Ask about services, pricing, timelines or results. <span class="text-white/50">No real API — local demo logic.</span></div></div>`;
+}
+wireChat();
+
+/* ---------- simple hash router (Future: role-based routing) ---------- */
+function route(){ const h=location.hash||"#/";
+  $$('#dotsMenu').forEach(m=>m.classList.add('hidden'));
+  if(h.startsWith("#/login")||h.startsWith("#/portal")||h.startsWith("#/work")){
+    $('#view-main').classList.add('hidden'); $('#view-sub').classList.remove('hidden'); scrollTo(0,0);
+    if(h.startsWith("#/login")) renderLogin();
+    else if(h.startsWith("#/portal")) renderPortal(h.split("/")[2]||"founder");
+    else if(h.startsWith("#/work")){ const slug=h.split("/")[2]; const p=projectsData.find(x=>x.slug===slug); renderWorkDetail(p); }
+  } else { $('#view-sub').classList.add('hidden'); $('#view-main').classList.remove('hidden'); if(h.length>2&&$(h)){ setTimeout(()=>$(h).scrollIntoView({behavior:reduced?'auto':'smooth'}),80); } }
+  watchRv();
+}
+function shell(inner){ $('#subContent').innerHTML=`<a href="#/" class="inline-flex items-center gap-2 text-[13px] font-grotesk text-white/60 hover:text-[#D4FF3F] mb-6">← Back to site</a>${inner}`; lucide.createIcons(); }
+function renderLogin(){ shell(`
+  <div class="max-w-[520px] mx-auto glass2 rounded-[28px] p-8 md:p-10 text-center relative overflow-hidden">
+    <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#D4FF3F] via-[#4DE8FF] to-[#7C5CFF]"></div>
+    <div class="w-14 h-14 mx-auto rounded-2xl bg-[#D4FF3F] flex items-center justify-center font-display font-black text-black text-2xl">N</div>
+    <h2 class="font-display font-black text-[32px] mt-5">Client Portal</h2><p class="text-white/55 text-[14px] mt-2">Choose a demo role to preview the portal shell.</p>
+    <div class="grid grid-cols-2 gap-3 mt-7">${["Founder","Manager","Employee","Client"].map(r=>`<a href="#/portal/${r.toLowerCase()}" class="rounded-2xl border border-white/12 py-5 hover:bg-[#D4FF3F] hover:text-black hover:border-[#D4FF3F] transition group"><div class="font-display font-black">${r}</div><div class="text-[11px] opacity-60">Demo access →</div></a>`).join('')}</div>
+    <div class="mt-6 hairline rounded-2xl p-4 text-[12px] text-white/50 bg-white/[0.02]">Portal integration coming in the next build phase. No real auth in Phase 1 — UI shell only.</div>
+    <div class="micro !text-[10px] text-white/30 mt-4">Future: role-based routing + SSO</div>
+  </div>`);
+}
+function renderPortal(role){ const R=role[0].toUpperCase()+role.slice(1); shell(`
+  <div class="glass2 rounded-[28px] overflow-hidden">
+    <div class="p-7 md:p-9 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/10 bg-white/[0.02]"><div class="flex items-center gap-4"><div class="w-12 h-12 rounded-2xl bg-[#D4FF3F] text-black flex items-center justify-center font-display font-black">${R[0]}</div><div><div class="micro text-[#D4FF3F]">${R} workspace — placeholder</div><h2 class="font-display font-black text-[28px]">Good morning, ${R}.</h2></div></div><span class="micro !text-[10px] px-4 py-2 rounded-full bg-[#D4FF3F]/10 border border-[#D4FF3F]/30 text-[#D4FF3F]">Phase 2 • Coming next</span></div>
+    <div class="p-7 md:p-9 grid sm:grid-cols-3 gap-4">${[["Revenue attributed","£128,400","+18%"],["Active experiments","12","3 winners"],["Tasks due","8","2 overdue"]].map(s=>`<div class="hairline rounded-2xl p-5 bg-white/[0.02]"><div class="micro !text-[10px] text-muted">${s[0]}</div><div class="font-display font-black text-[28px] mt-1">${s[1]}</div><div class="text-[12px] text-[#D4FF3F]">${s[2]}</div></div>`).join('')}</div>
+    <div class="px-7 md:px-9 pb-9"><div class="hairline rounded-2xl p-6 text-center text-white/50 text-[14px]"> dashboards, roles, tasks and reports plug in here.<br/><span class="text-[12px]">Architecture ready — data layer already centralized in this build.</span></div>
+    <div class="flex gap-3 mt-5 justify-center"><a href="#/" class="btn-lime rounded-full px-6 py-3 text-[12px]">Back to site</a><a href="#/login" class="btn-ghost rounded-full px-6 py-3 text-[12px]">Switch role</a></div></div>
+  </div>`);
+}
+function renderWorkDetail(p){ if(!p){ shell(`<div class="text-center py-20"><h2 class="font-display font-black text-4xl">Case not found.</h2><a href="#/" class="text-[#D4FF3F]">← Back</a></div>`); return; }
+  shell(`<div class="rounded-[28px] overflow-hidden hairline"><img src="${p.img}" class="w-full h-[320px] object-cover" alt="${p.client}"/><div class="glass2 p-8 md:p-12"><div class="micro text-[#D4FF3F]">${p.industry} • ${p.service}</div><h2 class="font-display font-black text-[clamp(2rem,6vw,4rem)] leading-none mt-3">${p.client}</h2><div class="mt-3 inline-block bg-[#D4FF3F] text-black font-bold px-5 py-2 rounded-full text-[14px]">${p.result}</div><p class="text-white/60 mt-5 max-w-[640px]">${p.desc}</p><div class="grid grid-cols-3 gap-3 mt-6 max-w-[640px]">${Object.entries(p.metrics).map(([k,v])=>`<div class="hairline rounded-2xl p-4 text-center"><div class="font-display font-black text-2xl text-[#D4FF3F]">${v}</div><div class="micro !text-[10px] text-muted">${k}</div></div>`).join('')}</div><div class="mt-8 flex gap-3"><a href="#contact" class="btn-lime rounded-full px-8 py-4 text-[13px]">Start a Project</a><a href="#/" class="btn-ghost rounded-full px-8 py-4 text-[13px]">All work</a></div></div></div>`);
+}
+addEventListener('hashchange',route);
+
+/* ---------- init ---------- */
+lucide.createIcons(); watchRv(); procUpd(); route();
+setTimeout(()=>{try{drawChart()}catch(e){}},1200);
+</script>
+</body>
+</html>
